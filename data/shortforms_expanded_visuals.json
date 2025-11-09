@@ -1,0 +1,1206 @@
+{
+  "a": {
+    "stroke_combo": "Dot above the line",
+    "visual_description": "Dot above the line"
+  },
+  "an": {
+    "stroke_combo": "Dot above the line",
+    "visual_description": "Dot above the line"
+  },
+  "the": {
+    "stroke_combo": "THE",
+    "visual_description": "Heavy curve opening to the left"
+  },
+  "and": {
+    "stroke_combo": "Large hook",
+    "visual_description": "Large hook"
+  },
+  "be": {
+    "stroke_combo": "B",
+    "visual_description": "Heavy straight line written downward"
+  },
+  "been": {
+    "stroke_combo": "B + N",
+    "visual_description": "Heavy straight line written downward + Light upward diagonal stroke"
+  },
+  "is": {
+    "stroke_combo": "S",
+    "visual_description": "Small left-facing curve"
+  },
+  "his": {
+    "stroke_combo": "S",
+    "visual_description": "Small left-facing curve"
+  },
+  "it": {
+    "stroke_combo": "T",
+    "visual_description": "Light straight line written downward (longer than P)"
+  },
+  "at": {
+    "stroke_combo": "T",
+    "visual_description": "Light straight line written downward (longer than P)"
+  },
+  "in": {
+    "stroke_combo": "N",
+    "visual_description": "Light upward diagonal stroke"
+  },
+  "but": {
+    "stroke_combo": "B + T",
+    "visual_description": "Heavy straight line written downward + Light straight line written downward (longer than P)"
+  },
+  "to": {
+    "stroke_combo": "T (disjoined above)",
+    "visual_description": "Light straight line written downward (longer than P) (disjoined above)"
+  },
+  "too": {
+    "stroke_combo": "T (disjoined above)",
+    "visual_description": "Light straight line written downward (longer than P) (disjoined above)"
+  },
+  "two": {
+    "stroke_combo": "T (disjoined above)",
+    "visual_description": "Light straight line written downward (longer than P) (disjoined above)"
+  },
+  "for": {
+    "stroke_combo": "F",
+    "visual_description": "Light curve opening to the right"
+  },
+  "of": {
+    "stroke_combo": "V",
+    "visual_description": "Heavy curve opening to the right"
+  },
+  "off": {
+    "stroke_combo": "V + F",
+    "visual_description": "Heavy curve opening to the right + Light curve opening to the right"
+  },
+  "on": {
+    "stroke_combo": "N (halved)",
+    "visual_description": "Light upward diagonal stroke (halved)"
+  },
+  "not": {
+    "stroke_combo": "N + T",
+    "visual_description": "Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "do": {
+    "stroke_combo": "D",
+    "visual_description": "Heavy straight line written downward (longer than B)"
+  },
+  "which": {
+    "stroke_combo": "CH",
+    "visual_description": "Light straight line written downward (longer than T)"
+  },
+  "will": {
+    "stroke_combo": "L (halved)",
+    "visual_description": "Upward stroke (halved)"
+  },
+  "have": {
+    "stroke_combo": "V",
+    "visual_description": "Heavy curve opening to the right"
+  },
+  "had": {
+    "stroke_combo": "D",
+    "visual_description": "Heavy straight line written downward (longer than B)"
+  },
+  "with": {
+    "stroke_combo": "ITH",
+    "visual_description": "Light curve opening to the left"
+  },
+  "this": {
+    "stroke_combo": "THE + S",
+    "visual_description": "Heavy curve opening to the left + Small left-facing curve"
+  },
+  "that": {
+    "stroke_combo": "THE + T",
+    "visual_description": "Heavy curve opening to the left + Light straight line written downward (longer than P)"
+  },
+  "them": {
+    "stroke_combo": "THE + M",
+    "visual_description": "Heavy curve opening to the left + Light horizontal hook"
+  },
+  "their": {
+    "stroke_combo": "THE + R",
+    "visual_description": "Heavy curve opening to the left + Upward or downward curved stroke"
+  },
+  "there": {
+    "stroke_combo": "THE + R",
+    "visual_description": "Heavy curve opening to the left + Upward or downward curved stroke"
+  },
+  "think": {
+    "stroke_combo": "ITH + NG + K",
+    "visual_description": "Light curve opening to the left + Heavy upward diagonal stroke + Light horizontal line left to right"
+  },
+  "thing": {
+    "stroke_combo": "NG",
+    "visual_description": "Heavy upward diagonal stroke"
+  },
+  "I": {
+    "stroke_combo": "Stroke I",
+    "visual_description": "Stroke I"
+  },
+  "me": {
+    "stroke_combo": "M",
+    "visual_description": "Light horizontal hook"
+  },
+  "my": {
+    "stroke_combo": "M + Y",
+    "visual_description": "Light horizontal hook + Light upward curve (smaller than W)"
+  },
+  "we": {
+    "stroke_combo": "W",
+    "visual_description": "Light upward curve"
+  },
+  "he": {
+    "stroke_combo": "H",
+    "visual_description": "Dot"
+  },
+  "him": {
+    "stroke_combo": "M",
+    "visual_description": "Light horizontal hook"
+  },
+  "you": {
+    "stroke_combo": "Y",
+    "visual_description": "Light upward curve (smaller than W)"
+  },
+  "your": {
+    "stroke_combo": "Y + R",
+    "visual_description": "Light upward curve (smaller than W) + Upward or downward curved stroke"
+  },
+  "come": {
+    "stroke_combo": "K + M",
+    "visual_description": "Light horizontal line left to right + Light horizontal hook"
+  },
+  "came": {
+    "stroke_combo": "K + M",
+    "visual_description": "Light horizontal line left to right + Light horizontal hook"
+  },
+  "can": {
+    "stroke_combo": "K + N",
+    "visual_description": "Light horizontal line left to right + Light upward diagonal stroke"
+  },
+  "could": {
+    "stroke_combo": "K + D",
+    "visual_description": "Light horizontal line left to right + Heavy straight line written downward (longer than B)"
+  },
+  "would": {
+    "stroke_combo": "W + D",
+    "visual_description": "Light upward curve + Heavy straight line written downward (longer than B)"
+  },
+  "should": {
+    "stroke_combo": "ISH + D",
+    "visual_description": "Light deep curve + Heavy straight line written downward (longer than B)"
+  },
+  "must": {
+    "stroke_combo": "M + S + T",
+    "visual_description": "Light horizontal hook + Small left-facing curve + Light straight line written downward (longer than P)"
+  },
+  "more": {
+    "stroke_combo": "M + R",
+    "visual_description": "Light horizontal hook + Upward or downward curved stroke"
+  },
+  "make": {
+    "stroke_combo": "M + K",
+    "visual_description": "Light horizontal hook + Light horizontal line left to right"
+  },
+  "made": {
+    "stroke_combo": "M + D",
+    "visual_description": "Light horizontal hook + Heavy straight line written downward (longer than B)"
+  },
+  "am": {
+    "stroke_combo": "M",
+    "visual_description": "Light horizontal hook"
+  },
+  "are": {
+    "stroke_combo": "R",
+    "visual_description": "Upward or downward curved stroke"
+  },
+  "was": {
+    "stroke_combo": "S (heavy)",
+    "visual_description": "S (heavy) stroke"
+  },
+  "were": {
+    "stroke_combo": "W + R",
+    "visual_description": "Light upward curve + Upward or downward curved stroke"
+  },
+  "has": {
+    "stroke_combo": "S (heavy)",
+    "visual_description": "S (heavy) stroke"
+  },
+  "may": {
+    "stroke_combo": "M",
+    "visual_description": "Light horizontal hook"
+  },
+  "might": {
+    "stroke_combo": "M + T",
+    "visual_description": "Light horizontal hook + Light straight line written downward (longer than P)"
+  },
+  "give": {
+    "stroke_combo": "G + V",
+    "visual_description": "Heavy horizontal line left to right + Heavy curve opening to the right"
+  },
+  "given": {
+    "stroke_combo": "G + V + N",
+    "visual_description": "Heavy horizontal line left to right + Heavy curve opening to the right + Light upward diagonal stroke"
+  },
+  "go": {
+    "stroke_combo": "G",
+    "visual_description": "Heavy horizontal line left to right"
+  },
+  "gone": {
+    "stroke_combo": "G + N",
+    "visual_description": "Heavy horizontal line left to right + Light upward diagonal stroke"
+  },
+  "get": {
+    "stroke_combo": "G + T",
+    "visual_description": "Heavy horizontal line left to right + Light straight line written downward (longer than P)"
+  },
+  "got": {
+    "stroke_combo": "G + T",
+    "visual_description": "Heavy horizontal line left to right + Light straight line written downward (longer than P)"
+  },
+  "all": {
+    "stroke_combo": "L",
+    "visual_description": "Upward stroke"
+  },
+  "almost": {
+    "stroke_combo": "L + M + S + T",
+    "visual_description": "Upward stroke + Light horizontal hook + Small left-facing curve + Light straight line written downward (longer than P)"
+  },
+  "also": {
+    "stroke_combo": "L + S",
+    "visual_description": "Upward stroke + Small left-facing curve"
+  },
+  "although": {
+    "stroke_combo": "L + ITH",
+    "visual_description": "Upward stroke + Light curve opening to the left"
+  },
+  "always": {
+    "stroke_combo": "L + W + S",
+    "visual_description": "Upward stroke + Light upward curve + Small left-facing curve"
+  },
+  "any": {
+    "stroke_combo": "N + Y",
+    "visual_description": "Light upward diagonal stroke + Light upward curve (smaller than W)"
+  },
+  "anything": {
+    "stroke_combo": "N + Y + NG",
+    "visual_description": "Light upward diagonal stroke + Light upward curve (smaller than W) + Heavy upward diagonal stroke"
+  },
+  "anybody": {
+    "stroke_combo": "N + Y + B + D",
+    "visual_description": "Light upward diagonal stroke + Light upward curve (smaller than W) + Heavy straight line written downward + Heavy straight line written downward (longer than B)"
+  },
+  "business": {
+    "stroke_combo": "B + S + N + S",
+    "visual_description": "Heavy straight line written downward + Small left-facing curve + Light upward diagonal stroke + Small left-facing curve"
+  },
+  "call": {
+    "stroke_combo": "K + L",
+    "visual_description": "Light horizontal line left to right + Upward stroke"
+  },
+  "called": {
+    "stroke_combo": "K + L + D",
+    "visual_description": "Light horizontal line left to right + Upward stroke + Heavy straight line written downward (longer than B)"
+  },
+  "child": {
+    "stroke_combo": "CH + L + D",
+    "visual_description": "Light straight line written downward (longer than T) + Upward stroke + Heavy straight line written downward (longer than B)"
+  },
+  "children": {
+    "stroke_combo": "CH + L + D + R + N",
+    "visual_description": "Light straight line written downward (longer than T) + Upward stroke + Heavy straight line written downward (longer than B) + Upward or downward curved stroke + Light upward diagonal stroke"
+  },
+  "company": {
+    "stroke_combo": "K + M + P + N + Y",
+    "visual_description": "Light horizontal line left to right + Light horizontal hook + Light straight line written downward + Light upward diagonal stroke + Light upward curve (smaller than W)"
+  },
+  "customer": {
+    "stroke_combo": "K + S + T + M + R",
+    "visual_description": "Light horizontal line left to right + Small left-facing curve + Light straight line written downward (longer than P) + Light horizontal hook + Upward or downward curved stroke"
+  },
+  "dear": {
+    "stroke_combo": "D + R",
+    "visual_description": "Heavy straight line written downward (longer than B) + Upward or downward curved stroke"
+  },
+  "different": {
+    "stroke_combo": "D + F + R + N + T",
+    "visual_description": "Heavy straight line written downward (longer than B) + Light curve opening to the right + Upward or downward curved stroke + Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "difficult": {
+    "stroke_combo": "D + F + K + L + T",
+    "visual_description": "Heavy straight line written downward (longer than B) + Light curve opening to the right + Light horizontal line left to right + Upward stroke + Light straight line written downward (longer than P)"
+  },
+  "every": {
+    "stroke_combo": "V + R + Y",
+    "visual_description": "Heavy curve opening to the right + Upward or downward curved stroke + Light upward curve (smaller than W)"
+  },
+  "everybody": {
+    "stroke_combo": "V + R + Y + B + D",
+    "visual_description": "Heavy curve opening to the right + Upward or downward curved stroke + Light upward curve (smaller than W) + Heavy straight line written downward + Heavy straight line written downward (longer than B)"
+  },
+  "everything": {
+    "stroke_combo": "V + R + Y + NG",
+    "visual_description": "Heavy curve opening to the right + Upward or downward curved stroke + Light upward curve (smaller than W) + Heavy upward diagonal stroke"
+  },
+  "family": {
+    "stroke_combo": "F + M + L + Y",
+    "visual_description": "Light curve opening to the right + Light horizontal hook + Upward stroke + Light upward curve (smaller than W)"
+  },
+  "favor": {
+    "stroke_combo": "F + V + R",
+    "visual_description": "Light curve opening to the right + Heavy curve opening to the right + Upward or downward curved stroke"
+  },
+  "find": {
+    "stroke_combo": "F + N + D",
+    "visual_description": "Light curve opening to the right + Light upward diagonal stroke + Heavy straight line written downward (longer than B)"
+  },
+  "first": {
+    "stroke_combo": "F + R + S + T",
+    "visual_description": "Light curve opening to the right + Upward or downward curved stroke + Small left-facing curve + Light straight line written downward (longer than P)"
+  },
+  "from": {
+    "stroke_combo": "F + R + M",
+    "visual_description": "Light curve opening to the right + Upward or downward curved stroke + Light horizontal hook"
+  },
+  "gentleman": {
+    "stroke_combo": "G + N + T + L + M + N",
+    "visual_description": "Heavy horizontal line left to right + Light upward diagonal stroke + Light straight line written downward (longer than P) + Upward stroke + Light horizontal hook + Light upward diagonal stroke"
+  },
+  "gentlemen": {
+    "stroke_combo": "G + N + T + L + M + N",
+    "visual_description": "Heavy horizontal line left to right + Light upward diagonal stroke + Light straight line written downward (longer than P) + Upward stroke + Light horizontal hook + Light upward diagonal stroke"
+  },
+  "glad": {
+    "stroke_combo": "G + L + D",
+    "visual_description": "Heavy horizontal line left to right + Upward stroke + Heavy straight line written downward (longer than B)"
+  },
+  "good": {
+    "stroke_combo": "G + D",
+    "visual_description": "Heavy horizontal line left to right + Heavy straight line written downward (longer than B)"
+  },
+  "great": {
+    "stroke_combo": "G + R + T",
+    "visual_description": "Heavy horizontal line left to right + Upward or downward curved stroke + Light straight line written downward (longer than P)"
+  },
+  "hour": {
+    "stroke_combo": "R",
+    "visual_description": "Upward or downward curved stroke"
+  },
+  "how": {
+    "stroke_combo": "H + W",
+    "visual_description": "Dot + Light upward curve"
+  },
+  "however": {
+    "stroke_combo": "H + W + V + R",
+    "visual_description": "Dot + Light upward curve + Heavy curve opening to the right + Upward or downward curved stroke"
+  },
+  "information": {
+    "stroke_combo": "N + F + M + ISH + N",
+    "visual_description": "Light upward diagonal stroke + Light curve opening to the right + Light horizontal hook + Light deep curve + Light upward diagonal stroke"
+  },
+  "into": {
+    "stroke_combo": "N + T",
+    "visual_description": "Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "ladies": {
+    "stroke_combo": "L + D + S",
+    "visual_description": "Upward stroke + Heavy straight line written downward (longer than B) + Small left-facing curve"
+  },
+  "lady": {
+    "stroke_combo": "L + D + Y",
+    "visual_description": "Upward stroke + Heavy straight line written downward (longer than B) + Light upward curve (smaller than W)"
+  },
+  "large": {
+    "stroke_combo": "L + R + G",
+    "visual_description": "Upward stroke + Upward or downward curved stroke + Heavy horizontal line left to right"
+  },
+  "last": {
+    "stroke_combo": "L + S + T",
+    "visual_description": "Upward stroke + Small left-facing curve + Light straight line written downward (longer than P)"
+  },
+  "letter": {
+    "stroke_combo": "L + T + R",
+    "visual_description": "Upward stroke + Light straight line written downward (longer than P) + Upward or downward curved stroke"
+  },
+  "little": {
+    "stroke_combo": "L + T + L",
+    "visual_description": "Upward stroke + Light straight line written downward (longer than P) + Upward stroke"
+  },
+  "long": {
+    "stroke_combo": "L + NG",
+    "visual_description": "Upward stroke + Heavy upward diagonal stroke"
+  },
+  "many": {
+    "stroke_combo": "M + N + Y",
+    "visual_description": "Light horizontal hook + Light upward diagonal stroke + Light upward curve (smaller than W)"
+  },
+  "matter": {
+    "stroke_combo": "M + T + R",
+    "visual_description": "Light horizontal hook + Light straight line written downward (longer than P) + Upward or downward curved stroke"
+  },
+  "month": {
+    "stroke_combo": "M + N + ITH",
+    "visual_description": "Light horizontal hook + Light upward diagonal stroke + Light curve opening to the left"
+  },
+  "morning": {
+    "stroke_combo": "M + R + N + NG",
+    "visual_description": "Light horizontal hook + Upward or downward curved stroke + Light upward diagonal stroke + Heavy upward diagonal stroke"
+  },
+  "most": {
+    "stroke_combo": "M + S + T",
+    "visual_description": "Light horizontal hook + Small left-facing curve + Light straight line written downward (longer than P)"
+  },
+  "much": {
+    "stroke_combo": "M + CH",
+    "visual_description": "Light horizontal hook + Light straight line written downward (longer than T)"
+  },
+  "name": {
+    "stroke_combo": "N + M",
+    "visual_description": "Light upward diagonal stroke + Light horizontal hook"
+  },
+  "new": {
+    "stroke_combo": "N + W",
+    "visual_description": "Light upward diagonal stroke + Light upward curve"
+  },
+  "next": {
+    "stroke_combo": "N + K + S + T",
+    "visual_description": "Light upward diagonal stroke + Light horizontal line left to right + Small left-facing curve + Light straight line written downward (longer than P)"
+  },
+  "nothing": {
+    "stroke_combo": "N + ITH + NG",
+    "visual_description": "Light upward diagonal stroke + Light curve opening to the left + Heavy upward diagonal stroke"
+  },
+  "now": {
+    "stroke_combo": "N + W",
+    "visual_description": "Light upward diagonal stroke + Light upward curve"
+  },
+  "number": {
+    "stroke_combo": "N + M + B + R",
+    "visual_description": "Light upward diagonal stroke + Light horizontal hook + Heavy straight line written downward + Upward or downward curved stroke"
+  },
+  "office": {
+    "stroke_combo": "F + S",
+    "visual_description": "Light curve opening to the right + Small left-facing curve"
+  },
+  "one": {
+    "stroke_combo": "W + N",
+    "visual_description": "Light upward curve + Light upward diagonal stroke"
+  },
+  "only": {
+    "stroke_combo": "N + L + Y",
+    "visual_description": "Light upward diagonal stroke + Upward stroke + Light upward curve (smaller than W)"
+  },
+  "other": {
+    "stroke_combo": "THE + R",
+    "visual_description": "Heavy curve opening to the left + Upward or downward curved stroke"
+  },
+  "our": {
+    "stroke_combo": "R",
+    "visual_description": "Upward or downward curved stroke"
+  },
+  "out": {
+    "stroke_combo": "T",
+    "visual_description": "Light straight line written downward (longer than P)"
+  },
+  "over": {
+    "stroke_combo": "V + R",
+    "visual_description": "Heavy curve opening to the right + Upward or downward curved stroke"
+  },
+  "own": {
+    "stroke_combo": "N",
+    "visual_description": "Light upward diagonal stroke"
+  },
+  "part": {
+    "stroke_combo": "P + R + T",
+    "visual_description": "Light straight line written downward + Upward or downward curved stroke + Light straight line written downward (longer than P)"
+  },
+  "people": {
+    "stroke_combo": "P + P + L",
+    "visual_description": "Light straight line written downward + Light straight line written downward + Upward stroke"
+  },
+  "perhaps": {
+    "stroke_combo": "P + R + H + P + S",
+    "visual_description": "Light straight line written downward + Upward or downward curved stroke + Dot + Light straight line written downward + Small left-facing curve"
+  },
+  "place": {
+    "stroke_combo": "P + L + S",
+    "visual_description": "Light straight line written downward + Upward stroke + Small left-facing curve"
+  },
+  "please": {
+    "stroke_combo": "P + L + S",
+    "visual_description": "Light straight line written downward + Upward stroke + Small left-facing curve"
+  },
+  "present": {
+    "stroke_combo": "P + R + S + N + T",
+    "visual_description": "Light straight line written downward + Upward or downward curved stroke + Small left-facing curve + Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "put": {
+    "stroke_combo": "P + T",
+    "visual_description": "Light straight line written downward + Light straight line written downward (longer than P)"
+  },
+  "question": {
+    "stroke_combo": "K + W + S + CH + N",
+    "visual_description": "Light horizontal line left to right + Light upward curve + Small left-facing curve + Light straight line written downward (longer than T) + Light upward diagonal stroke"
+  },
+  "quite": {
+    "stroke_combo": "K + W + T",
+    "visual_description": "Light horizontal line left to right + Light upward curve + Light straight line written downward (longer than P)"
+  },
+  "rather": {
+    "stroke_combo": "R + THE + R",
+    "visual_description": "Upward or downward curved stroke + Heavy curve opening to the left + Upward or downward curved stroke"
+  },
+  "regard": {
+    "stroke_combo": "R + G + R + D",
+    "visual_description": "Upward or downward curved stroke + Heavy horizontal line left to right + Upward or downward curved stroke + Heavy straight line written downward (longer than B)"
+  },
+  "request": {
+    "stroke_combo": "R + K + W + S + T",
+    "visual_description": "Upward or downward curved stroke + Light horizontal line left to right + Light upward curve + Small left-facing curve + Light straight line written downward (longer than P)"
+  },
+  "return": {
+    "stroke_combo": "R + T + R + N",
+    "visual_description": "Upward or downward curved stroke + Light straight line written downward (longer than P) + Upward or downward curved stroke + Light upward diagonal stroke"
+  },
+  "right": {
+    "stroke_combo": "R + T",
+    "visual_description": "Upward or downward curved stroke + Light straight line written downward (longer than P)"
+  },
+  "same": {
+    "stroke_combo": "S + M",
+    "visual_description": "Small left-facing curve + Light horizontal hook"
+  },
+  "say": {
+    "stroke_combo": "S",
+    "visual_description": "Small left-facing curve"
+  },
+  "see": {
+    "stroke_combo": "S",
+    "visual_description": "Small left-facing curve"
+  },
+  "seen": {
+    "stroke_combo": "S + N",
+    "visual_description": "Small left-facing curve + Light upward diagonal stroke"
+  },
+  "send": {
+    "stroke_combo": "S + N + D",
+    "visual_description": "Small left-facing curve + Light upward diagonal stroke + Heavy straight line written downward (longer than B)"
+  },
+  "sent": {
+    "stroke_combo": "S + N + T",
+    "visual_description": "Small left-facing curve + Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "several": {
+    "stroke_combo": "S + V + R + L",
+    "visual_description": "Small left-facing curve + Heavy curve opening to the right + Upward or downward curved stroke + Upward stroke"
+  },
+  "sir": {
+    "stroke_combo": "S + R",
+    "visual_description": "Small left-facing curve + Upward or downward curved stroke"
+  },
+  "so": {
+    "stroke_combo": "S",
+    "visual_description": "Small left-facing curve"
+  },
+  "some": {
+    "stroke_combo": "S + M",
+    "visual_description": "Small left-facing curve + Light horizontal hook"
+  },
+  "something": {
+    "stroke_combo": "S + M + NG",
+    "visual_description": "Small left-facing curve + Light horizontal hook + Heavy upward diagonal stroke"
+  },
+  "soon": {
+    "stroke_combo": "S + N",
+    "visual_description": "Small left-facing curve + Light upward diagonal stroke"
+  },
+  "state": {
+    "stroke_combo": "S + T + T",
+    "visual_description": "Small left-facing curve + Light straight line written downward (longer than P) + Light straight line written downward (longer than P)"
+  },
+  "still": {
+    "stroke_combo": "S + T + L",
+    "visual_description": "Small left-facing curve + Light straight line written downward (longer than P) + Upward stroke"
+  },
+  "such": {
+    "stroke_combo": "S + CH",
+    "visual_description": "Small left-facing curve + Light straight line written downward (longer than T)"
+  },
+  "sure": {
+    "stroke_combo": "ISH + R",
+    "visual_description": "Light deep curve + Upward or downward curved stroke"
+  },
+  "take": {
+    "stroke_combo": "T + K",
+    "visual_description": "Light straight line written downward (longer than P) + Light horizontal line left to right"
+  },
+  "taken": {
+    "stroke_combo": "T + K + N",
+    "visual_description": "Light straight line written downward (longer than P) + Light horizontal line left to right + Light upward diagonal stroke"
+  },
+  "than": {
+    "stroke_combo": "THE + N",
+    "visual_description": "Heavy curve opening to the left + Light upward diagonal stroke"
+  },
+  "thank": {
+    "stroke_combo": "ITH + NG + K",
+    "visual_description": "Light curve opening to the left + Heavy upward diagonal stroke + Light horizontal line left to right"
+  },
+  "then": {
+    "stroke_combo": "THE + N",
+    "visual_description": "Heavy curve opening to the left + Light upward diagonal stroke"
+  },
+  "these": {
+    "stroke_combo": "THE + S",
+    "visual_description": "Heavy curve opening to the left + Small left-facing curve"
+  },
+  "they": {
+    "stroke_combo": "THE",
+    "visual_description": "Heavy curve opening to the left"
+  },
+  "those": {
+    "stroke_combo": "THE + S",
+    "visual_description": "Heavy curve opening to the left + Small left-facing curve"
+  },
+  "though": {
+    "stroke_combo": "THE",
+    "visual_description": "Heavy curve opening to the left"
+  },
+  "thought": {
+    "stroke_combo": "ITH + T",
+    "visual_description": "Light curve opening to the left + Light straight line written downward (longer than P)"
+  },
+  "through": {
+    "stroke_combo": "ITH + R",
+    "visual_description": "Light curve opening to the left + Upward or downward curved stroke"
+  },
+  "time": {
+    "stroke_combo": "T + M",
+    "visual_description": "Light straight line written downward (longer than P) + Light horizontal hook"
+  },
+  "today": {
+    "stroke_combo": "T + D",
+    "visual_description": "Light straight line written downward (longer than P) + Heavy straight line written downward (longer than B)"
+  },
+  "together": {
+    "stroke_combo": "T + G + THE + R",
+    "visual_description": "Light straight line written downward (longer than P) + Heavy horizontal line left to right + Heavy curve opening to the left + Upward or downward curved stroke"
+  },
+  "told": {
+    "stroke_combo": "T + L + D",
+    "visual_description": "Light straight line written downward (longer than P) + Upward stroke + Heavy straight line written downward (longer than B)"
+  },
+  "tomorrow": {
+    "stroke_combo": "T + M + R",
+    "visual_description": "Light straight line written downward (longer than P) + Light horizontal hook + Upward or downward curved stroke"
+  },
+  "took": {
+    "stroke_combo": "T + K",
+    "visual_description": "Light straight line written downward (longer than P) + Light horizontal line left to right"
+  },
+  "toward": {
+    "stroke_combo": "T + W + R + D",
+    "visual_description": "Light straight line written downward (longer than P) + Light upward curve + Upward or downward curved stroke + Heavy straight line written downward (longer than B)"
+  },
+  "under": {
+    "stroke_combo": "N + D + R",
+    "visual_description": "Light upward diagonal stroke + Heavy straight line written downward (longer than B) + Upward or downward curved stroke"
+  },
+  "until": {
+    "stroke_combo": "N + T + L",
+    "visual_description": "Light upward diagonal stroke + Light straight line written downward (longer than P) + Upward stroke"
+  },
+  "up": {
+    "stroke_combo": "P",
+    "visual_description": "Light straight line written downward"
+  },
+  "upon": {
+    "stroke_combo": "P + N",
+    "visual_description": "Light straight line written downward + Light upward diagonal stroke"
+  },
+  "us": {
+    "stroke_combo": "S",
+    "visual_description": "Small left-facing curve"
+  },
+  "use": {
+    "stroke_combo": "S",
+    "visual_description": "Small left-facing curve"
+  },
+  "used": {
+    "stroke_combo": "S + D",
+    "visual_description": "Small left-facing curve + Heavy straight line written downward (longer than B)"
+  },
+  "very": {
+    "stroke_combo": "V + R + Y",
+    "visual_description": "Heavy curve opening to the right + Upward or downward curved stroke + Light upward curve (smaller than W)"
+  },
+  "want": {
+    "stroke_combo": "W + N + T",
+    "visual_description": "Light upward curve + Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "way": {
+    "stroke_combo": "W",
+    "visual_description": "Light upward curve"
+  },
+  "week": {
+    "stroke_combo": "W + K",
+    "visual_description": "Light upward curve + Light horizontal line left to right"
+  },
+  "well": {
+    "stroke_combo": "W + L",
+    "visual_description": "Light upward curve + Upward stroke"
+  },
+  "went": {
+    "stroke_combo": "W + N + T",
+    "visual_description": "Light upward curve + Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "what": {
+    "stroke_combo": "W + T",
+    "visual_description": "Light upward curve + Light straight line written downward (longer than P)"
+  },
+  "when": {
+    "stroke_combo": "W + N",
+    "visual_description": "Light upward curve + Light upward diagonal stroke"
+  },
+  "where": {
+    "stroke_combo": "W + R",
+    "visual_description": "Light upward curve + Upward or downward curved stroke"
+  },
+  "whether": {
+    "stroke_combo": "W + THE + R",
+    "visual_description": "Light upward curve + Heavy curve opening to the left + Upward or downward curved stroke"
+  },
+  "while": {
+    "stroke_combo": "W + L",
+    "visual_description": "Light upward curve + Upward stroke"
+  },
+  "who": {
+    "stroke_combo": "W",
+    "visual_description": "Light upward curve"
+  },
+  "whole": {
+    "stroke_combo": "W + L",
+    "visual_description": "Light upward curve + Upward stroke"
+  },
+  "why": {
+    "stroke_combo": "W + Y",
+    "visual_description": "Light upward curve + Light upward curve (smaller than W)"
+  },
+  "without": {
+    "stroke_combo": "W + ITH + T",
+    "visual_description": "Light upward curve + Light curve opening to the left + Light straight line written downward (longer than P)"
+  },
+  "word": {
+    "stroke_combo": "W + R + D",
+    "visual_description": "Light upward curve + Upward or downward curved stroke + Heavy straight line written downward (longer than B)"
+  },
+  "work": {
+    "stroke_combo": "W + R + K",
+    "visual_description": "Light upward curve + Upward or downward curved stroke + Light horizontal line left to right"
+  },
+  "world": {
+    "stroke_combo": "W + R + L + D",
+    "visual_description": "Light upward curve + Upward or downward curved stroke + Upward stroke + Heavy straight line written downward (longer than B)"
+  },
+  "write": {
+    "stroke_combo": "R + T",
+    "visual_description": "Upward or downward curved stroke + Light straight line written downward (longer than P)"
+  },
+  "written": {
+    "stroke_combo": "R + T + N",
+    "visual_description": "Upward or downward curved stroke + Light straight line written downward (longer than P) + Light upward diagonal stroke"
+  },
+  "year": {
+    "stroke_combo": "Y + R",
+    "visual_description": "Light upward curve (smaller than W) + Upward or downward curved stroke"
+  },
+  "yes": {
+    "stroke_combo": "Y + S",
+    "visual_description": "Light upward curve (smaller than W) + Small left-facing curve"
+  },
+  "yet": {
+    "stroke_combo": "Y + T",
+    "visual_description": "Light upward curve (smaller than W) + Light straight line written downward (longer than P)"
+  },
+  "young": {
+    "stroke_combo": "Y + NG",
+    "visual_description": "Light upward curve (smaller than W) + Heavy upward diagonal stroke"
+  },
+  "about": {
+    "stroke_combo": "B + T",
+    "visual_description": "Heavy straight line written downward + Light straight line written downward (longer than P)"
+  },
+  "above": {
+    "stroke_combo": "B + V",
+    "visual_description": "Heavy straight line written downward + Heavy curve opening to the right"
+  },
+  "account": {
+    "stroke_combo": "K + N + T",
+    "visual_description": "Light horizontal line left to right + Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "advantage": {
+    "stroke_combo": "D + V + N + T + G",
+    "visual_description": "Heavy straight line written downward (longer than B) + Heavy curve opening to the right + Light upward diagonal stroke + Light straight line written downward (longer than P) + Heavy horizontal line left to right"
+  },
+  "after": {
+    "stroke_combo": "F + T + R",
+    "visual_description": "Light curve opening to the right + Light straight line written downward (longer than P) + Upward or downward curved stroke"
+  },
+  "again": {
+    "stroke_combo": "G + N",
+    "visual_description": "Heavy horizontal line left to right + Light upward diagonal stroke"
+  },
+  "against": {
+    "stroke_combo": "G + N + S + T",
+    "visual_description": "Heavy horizontal line left to right + Light upward diagonal stroke + Small left-facing curve + Light straight line written downward (longer than P)"
+  },
+  "another": {
+    "stroke_combo": "N + THE + R",
+    "visual_description": "Light upward diagonal stroke + Heavy curve opening to the left + Upward or downward curved stroke"
+  },
+  "as": {
+    "stroke_combo": "S",
+    "visual_description": "Small left-facing curve"
+  },
+  "because": {
+    "stroke_combo": "B + K + S",
+    "visual_description": "Heavy straight line written downward + Light horizontal line left to right + Small left-facing curve"
+  },
+  "before": {
+    "stroke_combo": "B + F + R",
+    "visual_description": "Heavy straight line written downward + Light curve opening to the right + Upward or downward curved stroke"
+  },
+  "being": {
+    "stroke_combo": "B + NG",
+    "visual_description": "Heavy straight line written downward + Heavy upward diagonal stroke"
+  },
+  "believe": {
+    "stroke_combo": "B + L + V",
+    "visual_description": "Heavy straight line written downward + Upward stroke + Heavy curve opening to the right"
+  },
+  "below": {
+    "stroke_combo": "B + L",
+    "visual_description": "Heavy straight line written downward + Upward stroke"
+  },
+  "best": {
+    "stroke_combo": "B + S + T",
+    "visual_description": "Heavy straight line written downward + Small left-facing curve + Light straight line written downward (longer than P)"
+  },
+  "better": {
+    "stroke_combo": "B + T + R",
+    "visual_description": "Heavy straight line written downward + Light straight line written downward (longer than P) + Upward or downward curved stroke"
+  },
+  "between": {
+    "stroke_combo": "B + T + W + N",
+    "visual_description": "Heavy straight line written downward + Light straight line written downward (longer than P) + Light upward curve + Light upward diagonal stroke"
+  },
+  "both": {
+    "stroke_combo": "B + ITH",
+    "visual_description": "Heavy straight line written downward + Light curve opening to the left"
+  },
+  "by": {
+    "stroke_combo": "B",
+    "visual_description": "Heavy straight line written downward"
+  },
+  "cannot": {
+    "stroke_combo": "K + N + T",
+    "visual_description": "Light horizontal line left to right + Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "character": {
+    "stroke_combo": "K + R + K + T + R",
+    "visual_description": "Light horizontal line left to right + Upward or downward curved stroke + Light horizontal line left to right + Light straight line written downward (longer than P) + Upward or downward curved stroke"
+  },
+  "circumstance": {
+    "stroke_combo": "S + R + K + M + S + T + N + S",
+    "visual_description": "Small left-facing curve + Upward or downward curved stroke + Light horizontal line left to right + Light horizontal hook + Small left-facing curve + Light straight line written downward (longer than P) + Light upward diagonal stroke + Small left-facing curve"
+  },
+  "does": {
+    "stroke_combo": "D + S",
+    "visual_description": "Heavy straight line written downward (longer than B) + Small left-facing curve"
+  },
+  "down": {
+    "stroke_combo": "D + N",
+    "visual_description": "Heavy straight line written downward (longer than B) + Light upward diagonal stroke"
+  },
+  "during": {
+    "stroke_combo": "D + R + NG",
+    "visual_description": "Heavy straight line written downward (longer than B) + Upward or downward curved stroke + Heavy upward diagonal stroke"
+  },
+  "each": {
+    "stroke_combo": "CH",
+    "visual_description": "Light straight line written downward (longer than T)"
+  },
+  "either": {
+    "stroke_combo": "THE + R",
+    "visual_description": "Heavy curve opening to the left + Upward or downward curved stroke"
+  },
+  "enough": {
+    "stroke_combo": "N + F",
+    "visual_description": "Light upward diagonal stroke + Light curve opening to the right"
+  },
+  "even": {
+    "stroke_combo": "V + N",
+    "visual_description": "Heavy curve opening to the right + Light upward diagonal stroke"
+  },
+  "ever": {
+    "stroke_combo": "V + R",
+    "visual_description": "Heavy curve opening to the right + Upward or downward curved stroke"
+  },
+  "few": {
+    "stroke_combo": "F + W",
+    "visual_description": "Light curve opening to the right + Light upward curve"
+  },
+  "follow": {
+    "stroke_combo": "F + L",
+    "visual_description": "Light curve opening to the right + Upward stroke"
+  },
+  "full": {
+    "stroke_combo": "F + L",
+    "visual_description": "Light curve opening to the right + Upward stroke"
+  },
+  "general": {
+    "stroke_combo": "G + N + R + L",
+    "visual_description": "Heavy horizontal line left to right + Light upward diagonal stroke + Upward or downward curved stroke + Upward stroke"
+  },
+  "govern": {
+    "stroke_combo": "G + V + R + N",
+    "visual_description": "Heavy horizontal line left to right + Heavy curve opening to the right + Upward or downward curved stroke + Light upward diagonal stroke"
+  },
+  "government": {
+    "stroke_combo": "G + V + R + N + M + N + T",
+    "visual_description": "Heavy horizontal line left to right + Heavy curve opening to the right + Upward or downward curved stroke + Light upward diagonal stroke + Light horizontal hook + Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "hand": {
+    "stroke_combo": "H + N + D",
+    "visual_description": "Dot + Light upward diagonal stroke + Heavy straight line written downward (longer than B)"
+  },
+  "here": {
+    "stroke_combo": "H + R",
+    "visual_description": "Dot + Upward or downward curved stroke"
+  },
+  "herself": {
+    "stroke_combo": "H + R + S + L + F",
+    "visual_description": "Dot + Upward or downward curved stroke + Small left-facing curve + Upward stroke + Light curve opening to the right"
+  },
+  "himself": {
+    "stroke_combo": "H + M + S + L + F",
+    "visual_description": "Dot + Light horizontal hook + Small left-facing curve + Upward stroke + Light curve opening to the right"
+  },
+  "hope": {
+    "stroke_combo": "H + P",
+    "visual_description": "Dot + Light straight line written downward"
+  },
+  "immediate": {
+    "stroke_combo": "M + D + T",
+    "visual_description": "Light horizontal hook + Heavy straight line written downward (longer than B) + Light straight line written downward (longer than P)"
+  },
+  "important": {
+    "stroke_combo": "M + P + R + T + N + T",
+    "visual_description": "Light horizontal hook + Light straight line written downward + Upward or downward curved stroke + Light straight line written downward (longer than P) + Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "influence": {
+    "stroke_combo": "N + F + L + N + S",
+    "visual_description": "Light upward diagonal stroke + Light curve opening to the right + Upward stroke + Light upward diagonal stroke + Small left-facing curve"
+  },
+  "knowledge": {
+    "stroke_combo": "N + L + G",
+    "visual_description": "Light upward diagonal stroke + Upward stroke + Heavy horizontal line left to right"
+  },
+  "less": {
+    "stroke_combo": "L + S",
+    "visual_description": "Upward stroke + Small left-facing curve"
+  },
+  "like": {
+    "stroke_combo": "L + K",
+    "visual_description": "Upward stroke + Light horizontal line left to right"
+  },
+  "manufacture": {
+    "stroke_combo": "M + N + F + K + CH + R",
+    "visual_description": "Light horizontal hook + Light upward diagonal stroke + Light curve opening to the right + Light horizontal line left to right + Light straight line written downward (longer than T) + Upward or downward curved stroke"
+  },
+  "member": {
+    "stroke_combo": "M + M + B + R",
+    "visual_description": "Light horizontal hook + Light horizontal hook + Heavy straight line written downward + Upward or downward curved stroke"
+  },
+  "men": {
+    "stroke_combo": "M + N",
+    "visual_description": "Light horizontal hook + Light upward diagonal stroke"
+  },
+  "merchant": {
+    "stroke_combo": "M + R + CH + N + T",
+    "visual_description": "Light horizontal hook + Upward or downward curved stroke + Light straight line written downward (longer than T) + Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "mind": {
+    "stroke_combo": "M + N + D",
+    "visual_description": "Light horizontal hook + Light upward diagonal stroke + Heavy straight line written downward (longer than B)"
+  },
+  "neither": {
+    "stroke_combo": "N + THE + R",
+    "visual_description": "Light upward diagonal stroke + Heavy curve opening to the left + Upward or downward curved stroke"
+  },
+  "never": {
+    "stroke_combo": "N + V + R",
+    "visual_description": "Light upward diagonal stroke + Heavy curve opening to the right + Upward or downward curved stroke"
+  },
+  "none": {
+    "stroke_combo": "N + N",
+    "visual_description": "Light upward diagonal stroke + Light upward diagonal stroke"
+  },
+  "nor": {
+    "stroke_combo": "N + R",
+    "visual_description": "Light upward diagonal stroke + Upward or downward curved stroke"
+  },
+  "once": {
+    "stroke_combo": "W + N + S",
+    "visual_description": "Light upward curve + Light upward diagonal stroke + Small left-facing curve"
+  },
+  "order": {
+    "stroke_combo": "R + D + R",
+    "visual_description": "Upward or downward curved stroke + Heavy straight line written downward (longer than B) + Upward or downward curved stroke"
+  },
+  "otherwise": {
+    "stroke_combo": "THE + R + W + S",
+    "visual_description": "Heavy curve opening to the left + Upward or downward curved stroke + Light upward curve + Small left-facing curve"
+  },
+  "particular": {
+    "stroke_combo": "P + R + T + K + L + R",
+    "visual_description": "Light straight line written downward + Upward or downward curved stroke + Light straight line written downward (longer than P) + Light horizontal line left to right + Upward stroke + Upward or downward curved stroke"
+  },
+  "power": {
+    "stroke_combo": "P + W + R",
+    "visual_description": "Light straight line written downward + Light upward curve + Upward or downward curved stroke"
+  },
+  "principle": {
+    "stroke_combo": "P + R + N + S + P + L",
+    "visual_description": "Light straight line written downward + Upward or downward curved stroke + Light upward diagonal stroke + Small left-facing curve + Light straight line written downward + Upward stroke"
+  },
+  "public": {
+    "stroke_combo": "P + B + L + K",
+    "visual_description": "Light straight line written downward + Heavy straight line written downward + Upward stroke + Light horizontal line left to right"
+  },
+  "publish": {
+    "stroke_combo": "P + B + L + ISH",
+    "visual_description": "Light straight line written downward + Heavy straight line written downward + Upward stroke + Light deep curve"
+  },
+  "remember": {
+    "stroke_combo": "R + M + M + B + R",
+    "visual_description": "Upward or downward curved stroke + Light horizontal hook + Light horizontal hook + Heavy straight line written downward + Upward or downward curved stroke"
+  },
+  "satisfy": {
+    "stroke_combo": "S + T + S + F + Y",
+    "visual_description": "Small left-facing curve + Light straight line written downward (longer than P) + Small left-facing curve + Light curve opening to the right + Light upward curve (smaller than W)"
+  },
+  "self": {
+    "stroke_combo": "S + L + F",
+    "visual_description": "Small left-facing curve + Upward stroke + Light curve opening to the right"
+  },
+  "set": {
+    "stroke_combo": "S + T",
+    "visual_description": "Small left-facing curve + Light straight line written downward (longer than P)"
+  },
+  "shall": {
+    "stroke_combo": "ISH + L",
+    "visual_description": "Light deep curve + Upward stroke"
+  },
+  "short": {
+    "stroke_combo": "ISH + R + T",
+    "visual_description": "Light deep curve + Upward or downward curved stroke + Light straight line written downward (longer than P)"
+  },
+  "since": {
+    "stroke_combo": "S + N + S",
+    "visual_description": "Small left-facing curve + Light upward diagonal stroke + Small left-facing curve"
+  },
+  "small": {
+    "stroke_combo": "S + M + L",
+    "visual_description": "Small left-facing curve + Light horizontal hook + Upward stroke"
+  },
+  "sometimes": {
+    "stroke_combo": "S + M + T + M + S",
+    "visual_description": "Small left-facing curve + Light horizontal hook + Light straight line written downward (longer than P) + Light horizontal hook + Small left-facing curve"
+  },
+  "speak": {
+    "stroke_combo": "S + P + K",
+    "visual_description": "Small left-facing curve + Light straight line written downward + Light horizontal line left to right"
+  },
+  "special": {
+    "stroke_combo": "S + P + ISH + L",
+    "visual_description": "Small left-facing curve + Light straight line written downward + Light deep curve + Upward stroke"
+  },
+  "spirit": {
+    "stroke_combo": "S + P + R + T",
+    "visual_description": "Small left-facing curve + Light straight line written downward + Upward or downward curved stroke + Light straight line written downward (longer than P)"
+  },
+  "subject": {
+    "stroke_combo": "S + B + G + K + T",
+    "visual_description": "Small left-facing curve + Heavy straight line written downward + Heavy horizontal line left to right + Light horizontal line left to right + Light straight line written downward (longer than P)"
+  },
+  "success": {
+    "stroke_combo": "S + K + S + S",
+    "visual_description": "Small left-facing curve + Light horizontal line left to right + Small left-facing curve + Small left-facing curve"
+  },
+  "sufficient": {
+    "stroke_combo": "S + F + ISH + N + T",
+    "visual_description": "Small left-facing curve + Light curve opening to the right + Light deep curve + Light upward diagonal stroke + Light straight line written downward (longer than P)"
+  },
+  "table": {
+    "stroke_combo": "T + B + L",
+    "visual_description": "Light straight line written downward (longer than P) + Heavy straight line written downward + Upward stroke"
+  },
+  "therefore": {
+    "stroke_combo": "THE + R + F + R",
+    "visual_description": "Heavy curve opening to the left + Upward or downward curved stroke + Light curve opening to the right + Upward or downward curved stroke"
+  },
+  "thousand": {
+    "stroke_combo": "ITH + S + N + D",
+    "visual_description": "Light curve opening to the left + Small left-facing curve + Light upward diagonal stroke + Heavy straight line written downward (longer than B)"
+  },
+  "till": {
+    "stroke_combo": "T + L",
+    "visual_description": "Light straight line written downward (longer than P) + Upward stroke"
+  },
+  "truth": {
+    "stroke_combo": "T + R + ITH",
+    "visual_description": "Light straight line written downward (longer than P) + Upward or downward curved stroke + Light curve opening to the left"
+  },
+  "turn": {
+    "stroke_combo": "T + R + N",
+    "visual_description": "Light straight line written downward (longer than P) + Upward or downward curved stroke + Light upward diagonal stroke"
+  },
+  "unable": {
+    "stroke_combo": "N + B + L",
+    "visual_description": "Light upward diagonal stroke + Heavy straight line written downward + Upward stroke"
+  },
+  "union": {
+    "stroke_combo": "N + Y + N",
+    "visual_description": "Light upward diagonal stroke + Light upward curve (smaller than W) + Light upward diagonal stroke"
+  },
+  "usual": {
+    "stroke_combo": "S + L",
+    "visual_description": "Small left-facing curve + Upward stroke"
+  },
+  "value": {
+    "stroke_combo": "V + L",
+    "visual_description": "Heavy curve opening to the right + Upward stroke"
+  },
+  "whose": {
+    "stroke_combo": "W + S",
+    "visual_description": "Light upward curve + Small left-facing curve"
+  },
+  "wish": {
+    "stroke_combo": "W + ISH",
+    "visual_description": "Light upward curve + Light deep curve"
+  },
+  "woman": {
+    "stroke_combo": "W + M + N",
+    "visual_description": "Light upward curve + Light horizontal hook + Light upward diagonal stroke"
+  },
+  "women": {
+    "stroke_combo": "W + M + N",
+    "visual_description": "Light upward curve + Light horizontal hook + Light upward diagonal stroke"
+  },
+  "worth": {
+    "stroke_combo": "W + R + ITH",
+    "visual_description": "Light upward curve + Upward or downward curved stroke + Light curve opening to the left"
+  },
+  "yesterday": {
+    "stroke_combo": "Y + S + T + R + D + Y",
+    "visual_description": "Light upward curve (smaller than W) + Small left-facing curve + Light straight line written downward (longer than P) + Upward or downward curved stroke + Heavy straight line written downward (longer than B) + Light upward curve (smaller than W)"
+  }
+}

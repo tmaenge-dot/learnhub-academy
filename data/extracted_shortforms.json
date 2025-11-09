@@ -1,0 +1,96 @@
+{
+  "shortform_references": [
+    {
+      "page": "page_003",
+      "line_number": 52,
+      "context": "\nUnit 13 80\nN hook\n\nUnit 14 87\nWH, abbreviated W, WL, WHL\nand medial W\n\nUnit 15 93\nL hook\n",
+      "matched_line": "WH, abbreviated W, WL, WHL"
+    },
+    {
+      "page": "page_013",
+      "line_number": 7,
+      "context": "\nhse He oe do, ..L.... which, Md... 10, So... two/too,\n\noe WHO, oan they ...93.. is[his, ay object/objected,\n\nS circle is also joined to short forms, eg ........ objects.\n\nPhrasing\n\nTo help in rapid writing, shorthand words may often be joined. This is\nknown as phrasing. Outlines should only be phrased when they join easily",
+      "matched_line": "S circle is also joined to short forms, eg ........ objects."
+    },
+    {
+      "page": "page_037",
+      "line_number": 20,
+      "context": "rr a —_ a As\n\nfalls, feeling, vale, scale, skills, _ useful.\n\n. Be\nSpecial outlines: ....\".>.......... a\n\ncolumn, film.\n\nwritten upwards:\n",
+      "matched_line": "Special outlines: ....\".>.......... a"
+    },
+    {
+      "page": "page_053",
+      "line_number": 10,
+      "context": "such phrases as?\n\nRood ese rin ceo\n\nWea, Tam, I may, 1 can, I write.\n‘Tre short form you is turned on its side to form\n\nie you, give you, ao you, ‘aes you, are you.\n\nLO. ero aes € Bre ~Ft fo PES.\n",
+      "matched_line": "‘Tre short form you is turned on its side to form"
+    },
+    {
+      "page": "page_095",
+      "line_number": 4,
+      "context": "=== PAGE 95 ===\n\nUnit 14\nWH, Abbreviated W, WL, WHL, and\n\nMedial W\n\nWH\n",
+      "matched_line": "WH, Abbreviated W, WL, WHL, and"
+    },
+    {
+      "page": "page_095",
+      "line_number": 32,
+      "context": "\nweek, wagon, woman, women, warden, warehouse, warrant, worth,\n\nee\n\nWH, Abbreviated W, WL, WHL, and Medial W 87\n\n",
+      "matched_line": "WH, Abbreviated W, WL, WHL, and Medial W 87"
+    },
+    {
+      "page": "page_097",
+      "line_number": 6,
+      "context": "=== PAGE 97 ===\n\nial W\nthe middle of a word, where stroke WAY would be difficult to write,\n\nW can be represented by the abbreviated W, which is written in the\nion of the following vowel.\n\n1 A left semicircle represents W followed by a dot vowel\n\nAc",
+      "matched_line": "W can be represented by the abbreviated W, which is written in the"
+    },
+    {
+      "page": "page_097",
+      "line_number": 22,
+      "context": "2 A right semicircle represents W followed by a dash vowel\n\n>\ni waterworks, someone.\n\nWH, Abbreviated W, WL, WHL, and Medial W 89\n",
+      "matched_line": "WH, Abbreviated W, WL, WHL, and Medial W 89"
+    },
+    {
+      "page": "page_099",
+      "line_number": 6,
+      "context": "=== PAGE 99 ===\n\n4 ee ae Pat Ine he Se eS ee _\n\"4 OVS Ne 8 LN 2F NOs\n\nWH, Abbreviated W, WL, WHL, and Medial W 91\n\n",
+      "matched_line": "WH, Abbreviated W, WL, WHL, and Medial W 91"
+    },
+    {
+      "page": "page_137",
+      "line_number": 21,
+      "context": "\nconfidential, conference, computer, consider, complaint,\n\ncompact.\n\nTwo special outlines which you should memorise are\n\n1\ncommerce, commission.\n\nCON-, COM-, CUM-, or COG- may be shown in the middle of a word",
+      "matched_line": "Two special outlines which you should memorise are"
+    },
+    {
+      "page": "page_137",
+      "line_number": 40,
+      "context": "incomplete, incoming, circumference, _ recognise.\n\nNote: After another word, the dot may be omitted if the two outlines\ncan be written clearly close together. This cannot be done after a, the,\n\nor single downward dash short forms.\n\n2 ACCOM- or ACCOMMO. is represented by the consonant K, either\njoined (accomplish and its derivatives, and accommodation) or\ndisjoined, but written in first position (for vowel a)\n",
+      "matched_line": "or single downward dash short forms."
+    }
+  ],
+  "word_lists": [
+    {
+      "page": "page_013",
+      "words": [
+        "they",
+        "eg"
+      ]
+    },
+    {
+      "page": "page_051",
+      "words": [
+        "iphones"
+      ]
+    },
+    {
+      "page": "page_141",
+      "words": [
+        "Mote"
+      ]
+    }
+  ],
+  "summary": {
+    "total_references": 11,
+    "pages_with_shortforms": 11,
+    "pages_with_word_lists": 3
+  }
+}

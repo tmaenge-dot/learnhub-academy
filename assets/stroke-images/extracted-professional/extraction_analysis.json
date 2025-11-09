@@ -1,0 +1,31 @@
+{
+  "total_pages": 9,
+  "total_strokes_extracted": 26,
+  "extraction_method": "Focused Morphological Detection",
+  "success_rate": "100.0%",
+  "extraction_date": "2025-11-05",
+  "improvements": [
+    "Morphological operations to detect stroke-like shapes",
+    "Aspect ratio filtering (>2.0 for elongated strokes)",
+    "Area filtering (500-30000 pixels)",
+    "Position-based selection with hints",
+    "Aggressive thresholding (200) for dark strokes only"
+  ],
+  "file_size_range": "3.3 KB - 54.9 KB",
+  "quality": "Clean stroke symbols, no surrounding content",
+  "strokes_by_page": {
+    "page_9": ["P", "B"],
+    "page_10": ["T", "D"],
+    "page_11": ["CH", "J"],
+    "page_16": ["F", "V"],
+    "page_17": ["TH", "THE", "ITH"],
+    "page_18": ["S", "Z"],
+    "page_19": ["SH", "ZH", "ISH", "ZHEE"],
+    "page_20": ["K", "G", "M"],
+    "page_21": ["N", "NG", "L", "W", "Y", "H"]
+  },
+  "all_strokes": [
+    "B", "CH", "D", "F", "G", "H", "ISH", "ITH", "J", "K", "L", "M",
+    "N", "NG", "P", "S", "SH", "T", "TH", "THE", "V", "W", "Y", "Z", "ZH", "ZHEE"
+  ]
+}

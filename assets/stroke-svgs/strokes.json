@@ -1,0 +1,146 @@
+{
+  "P": {
+    "name": "P",
+    "weight": "light",
+    "file": "P.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "B": {
+    "name": "B",
+    "weight": "heavy",
+    "file": "B.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "T": {
+    "name": "T",
+    "weight": "light",
+    "file": "T.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "D": {
+    "name": "D",
+    "weight": "heavy",
+    "file": "D.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "CH": {
+    "name": "CH",
+    "weight": "light",
+    "file": "CH.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "J": {
+    "name": "J",
+    "weight": "heavy",
+    "file": "J.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "F": {
+    "name": "F (ef)",
+    "weight": "light",
+    "file": "F.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "V": {
+    "name": "V (vee)",
+    "weight": "heavy",
+    "file": "V.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "ITH": {
+    "name": "ITH (th)",
+    "weight": "light",
+    "file": "ITH.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "THE": {
+    "name": "THE (TH)",
+    "weight": "heavy",
+    "file": "THE.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "S": {
+    "name": "S (ess)",
+    "weight": "light",
+    "file": "S.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "Z": {
+    "name": "Z (zee)",
+    "weight": "heavy",
+    "file": "Z.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "ISH": {
+    "name": "ISH (sh)",
+    "weight": "light",
+    "file": "ISH.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "ZHEE": {
+    "name": "ZHEE (zh)",
+    "weight": "heavy",
+    "file": "ZHEE.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "K": {
+    "name": "K (kay)",
+    "weight": "light",
+    "file": "K.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "G": {
+    "name": "G (gay)",
+    "weight": "heavy",
+    "file": "G.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "L": {
+    "name": "L (el)",
+    "weight": "light",
+    "file": "L.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "N": {
+    "name": "N (en)",
+    "weight": "light",
+    "file": "N.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "NG": {
+    "name": "NG (ing)",
+    "weight": "heavy",
+    "file": "NG.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "R": {
+    "name": "R (ar)",
+    "weight": "light",
+    "file": "R.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "M": {
+    "name": "M (em)",
+    "weight": "light",
+    "file": "M.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "W": {
+    "name": "W (way)",
+    "weight": "light",
+    "file": "W.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "Y": {
+    "name": "Y (yay)",
+    "weight": "light",
+    "file": "Y.svg",
+    "viewBox": "0 0 50 50"
+  },
+  "H": {
+    "name": "H (aitch)",
+    "weight": "light",
+    "file": "H.svg",
+    "viewBox": "0 0 50 50"
+  }
+}

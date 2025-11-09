@@ -1,0 +1,23 @@
+{
+  "total_strokes": 16,
+  "strokes": {
+    "P": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/P_professional.png",
+    "B": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/B_professional.png",
+    "T": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/T_professional.png",
+    "CH": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/CH_professional.png",
+    "F": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/F_professional.png",
+    "V": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/V_professional.png",
+    "ITH": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/ITH_professional.png",
+    "THE": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/THE_professional.png",
+    "S": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/S_professional.png",
+    "ISH": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/ISH_professional.png",
+    "ZHEE": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/ZHEE_professional.png",
+    "K": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/K_professional.png",
+    "G": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/G_professional.png",
+    "M": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/M_professional.png",
+    "N": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/N_professional.png",
+    "NG": "/home/oem/Desktop/shorthand-simplified/assets/stroke-images/extracted-professional/NG_professional.png"
+  },
+  "extraction_method": "OpenCV contour detection",
+  "source": "Professional reference book pages (300 DPI)"
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Stroke Cropper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        
+        .main-panel {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .preview-panel {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        img {
+            max-width: 100%;
+            border: 2px solid #ddd;
+            cursor: crosshair;
+            display: block;
+        }
+        
+        .controls {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .save-btn {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .skip-btn {
+            background: #ff9800;
+            color: white;
+        }
+        
+        .clear-btn {
+            background: #9E9E9E;
+            color: white;
+        }
+        
+        .download-btn {
+            background: #2196F3;
+            color: white;
+        }
+        
+        select {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        
+        #canvas {
+            border: 2px solid #4CAF50;
+            max-width: 100%;
+        }
+        
+        .stroke-info {
+            padding: 10px;
+            background: #e3f2fd;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        
+        .preview-canvas {
+            border: 3px solid #4CAF50;
+            background: white;
+            max-width: 100%;
+        }
+        
+        .progress {
+            background: #e0e0e0;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .progress-bar {
+            background: #4CAF50;
+            height: 100%;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📖 Professional Stroke Cropper</h1>
+        <p>Click and drag to select strokes from the reference pages</p>
+        <div class="progress">
+            <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <label>Select Page: 
+            <select id="pageSelect">
+                <option value="unit1_straight_page-009">Page 9 (P, B)</option>
+                <option value="unit1_straight_page-010">Page 10 (T, D)</option>
+                <option value="unit1_straight_page-011">Page 11 (CH, J)</option>
+                <option value="unit2_curved_page-016">Page 16 (F, V)</option>
+                <option value="unit2_curved_page-017">Page 17 (ITH, THE)</option>
+                <option value="unit2_curved_page-018">Page 18 (S, Z)</option>
+                <option value="unit2_curved_page-019">Page 19 (ISH, ZHEE)</option>
+                <option value="unit3_horizontal_page-020">Page 20 (K, G, M)</option>
+                <option value="unit3_horizontal_page-021">Page 21 (N, NG, L, W, Y, H)</option>
+            </select>
+        </label>
+        
+        <label>Current Stroke:
+            <select id="strokeSelect"></select>
+        </label>
+        
+        <button class="save-btn" id="saveBtn" disabled>💾 Save Stroke</button>
+        <button class="skip-btn" id="skipBtn">⏭️ Skip</button>
+        <button class="clear-btn" id="clearBtn">🗑️ Clear</button>
+        <button class="download-btn" id="downloadBtn">📦 Download All</button>
+    </div>
+    
+    <div class="container">
+        <div class="main-panel">
+            <h3>Reference Page</h3>
+            <canvas id="canvas"></canvas>
+        </div>
+        
+        <div class="preview-panel">
+            <h3>🎨 Cropped Stroke Preview</h3>
+            <div class="stroke-info" id="strokeInfo">
+                Select a region to see preview
+            </div>
+            <canvas id="previewCanvas"></canvas>
+        </div>
+    </div>
+    
+    <script>
+        const strokePages = {
+            'unit1_straight_page-009': ['P', 'B'],
+            'unit1_straight_page-010': ['T', 'D'],
+            'unit1_straight_page-011': ['CH', 'J'],
+            'unit2_curved_page-016': ['F', 'V'],
+            'unit2_curved_page-017': ['ITH', 'THE'],
+            'unit2_curved_page-018': ['S', 'Z'],
+            'unit2_curved_page-019': ['ISH', 'ZHEE'],
+            'unit3_horizontal_page-020': ['K', 'G', 'M'],
+            'unit3_horizontal_page-021': ['N', 'NG', 'L', 'W', 'Y', 'H']
+        };
+        
+        let currentPage = '';
+        let currentStrokes = [];
+        let currentStrokeIndex = 0;
+        let extractedStrokes = {};
+        
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const previewCanvas = document.getElementById('previewCanvas');
+        const previewCtx = previewCanvas.getContext('2d');
+        
+        let img = new Image();
+        let isDrawing = false;
+        let startX, startY, endX, endY;
+        
+        // Load image
+        function loadImage(pageName) {
+            currentPage = pageName;
+            currentStrokes = strokePages[pageName];
+            currentStrokeIndex = 0;
+            
+            img.src = `assets/stroke-images/professional/${pageName}.png`;
+            img.onload = () => {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                ctx.drawImage(img, 0, 0);
+                updateStrokeSelect();
+                updateStrokeInfo();
+            };
+        }
+        
+        // Update stroke selector
+        function updateStrokeSelect() {
+            const select = document.getElementById('strokeSelect');
+            select.innerHTML = '';
+            currentStrokes.forEach((stroke, i) => {
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = stroke + (extractedStrokes[stroke] ? ' ✓' : '');
+                if (i === currentStrokeIndex) option.selected = true;
+                select.appendChild(option);
+            });
+        }
+        
+        // Update stroke info
+        function updateStrokeInfo() {
+            const stroke = currentStrokes[currentStrokeIndex];
+            document.getElementById('strokeInfo').innerHTML = `
+                <strong>Extracting:</strong> ${stroke}<br>
+                <strong>Progress:</strong> ${Object.keys(extractedStrokes).length}/26
+            `;
+            updateProgress();
+        }
+        
+        // Update progress bar
+        function updateProgress() {
+            const percentage = (Object.keys(extractedStrokes).length / 26) * 100;
+            document.getElementById('progressBar').style.width = percentage + '%';
+        }
+        
+        // Mouse events
+        canvas.addEventListener('mousedown', (e) => {
+            isDrawing = true;
+            const rect = canvas.getBoundingClientRect();
+            startX = (e.clientX - rect.left) * (canvas.width / rect.width);
+            startY = (e.clientY - rect.top) * (canvas.height / rect.height);
+        });
+        
+        canvas.addEventListener('mousemove', (e) => {
+            if (!isDrawing) return;
+            const rect = canvas.getBoundingClientRect();
+            endX = (e.clientX - rect.left) * (canvas.width / rect.width);
+            endY = (e.clientY - rect.top) * (canvas.height / rect.height);
+            
+            // Redraw
+            ctx.drawImage(img, 0, 0);
+            ctx.strokeStyle = '#4CAF50';
+            ctx.lineWidth = 3;
+            ctx.setLineDash([5, 5]);
+            ctx.strokeRect(startX, startY, endX - startX, endY - startY);
+            
+            // Update preview
+            updatePreview();
+        });
+        
+        canvas.addEventListener('mouseup', () => {
+            isDrawing = false;
+            document.getElementById('saveBtn').disabled = false;
+        });
+        
+        // Update preview
+        function updatePreview() {
+            const width = Math.abs(endX - startX);
+            const height = Math.abs(endY - startY);
+            const x = Math.min(startX, endX);
+            const y = Math.min(startY, endY);
+            
+            if (width > 0 && height > 0) {
+                previewCanvas.width = width;
+                previewCanvas.height = height;
+                previewCtx.drawImage(img, x, y, width, height, 0, 0, width, height);
+            }
+        }
+        
+        // Save stroke
+        document.getElementById('saveBtn').addEventListener('click', () => {
+            const stroke = currentStrokes[currentStrokeIndex];
+            const croppedData = previewCanvas.toDataURL('image/png');
+            extractedStrokes[stroke] = croppedData;
+            
+            // Move to next
+            currentStrokeIndex++;
+            if (currentStrokeIndex >= currentStrokes.length) {
+                // Next page
+                const pageSelect = document.getElementById('pageSelect');
+                if (pageSelect.selectedIndex < pageSelect.options.length - 1) {
+                    pageSelect.selectedIndex++;
+                    loadImage(pageSelect.value);
+                } else {
+                    alert('✅ All pages completed! Click Download All to save.');
+                }
+            } else {
+                updateStrokeSelect();
+                updateStrokeInfo();
+            }
+            
+            clearSelection();
+        });
+        
+        // Skip stroke
+        document.getElementById('skipBtn').addEventListener('click', () => {
+            currentStrokeIndex++;
+            if (currentStrokeIndex >= currentStrokes.length) {
+                const pageSelect = document.getElementById('pageSelect');
+                if (pageSelect.selectedIndex < pageSelect.options.length - 1) {
+                    pageSelect.selectedIndex++;
+                    loadImage(pageSelect.value);
+                }
+            } else {
+                updateStrokeSelect();
+                updateStrokeInfo();
+            }
+            clearSelection();
+        });
+        
+        // Clear selection
+        document.getElementById('clearBtn').addEventListener('click', clearSelection);
+        
+        function clearSelection() {
+            ctx.drawImage(img, 0, 0);
+            previewCtx.clearRect(0, 0, previewCanvas.width, previewCanvas.height);
+            document.getElementById('saveBtn').disabled = true;
+        }
+        
+        // Download all
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            Object.entries(extractedStrokes).forEach(([name, data]) => {
+                const link = document.createElement('a');
+                link.download = `${name}_professional.png`;
+                link.href = data;
+                link.click();
+            });
+            alert(`✅ Downloaded ${Object.keys(extractedStrokes).length} strokes!`);
+        });
+        
+        // Page change
+        document.getElementById('pageSelect').addEventListener('change', (e) => {
+            loadImage(e.target.value);
+            clearSelection();
+        });
+        
+        // Stroke select change
+        document.getElementById('strokeSelect').addEventListener('change', (e) => {
+            currentStrokeIndex = parseInt(e.target.value);
+            updateStrokeInfo();
+        });
+        
+        // Load first page
+        loadImage('unit1_straight_page-009');
+    </script>
+</body>
+</html>

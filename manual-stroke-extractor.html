@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Stroke Extractor - Missing Strokes</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 { margin-bottom: 10px; color: #4CAF50; }
+        .subtitle { color: #888; margin-bottom: 20px; }
+        
+        .controls {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .control-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        label { font-weight: 600; min-width: 100px; }
+        select, input, button {
+            padding: 8px 16px;
+            border-radius: 4px;
+            border: 1px solid #444;
+            background: #333;
+            color: #fff;
+            font-size: 14px;
+        }
+        
+        button {
+            background: #4CAF50;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        button:hover { background: #45a049; }
+        button:disabled { background: #666; cursor: not-allowed; }
+        
+        .workspace {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 20px;
+        }
+        
+        .canvas-area {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        #canvas {
+            background: white;
+            cursor: crosshair;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+        
+        .preview-area {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .preview-box {
+            background: #333;
+            border: 2px dashed #666;
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .preview-box img {
+            max-width: 100%;
+            max-height: 300px;
+            object-fit: contain;
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .preview-label {
+            margin-top: 10px;
+            font-weight: 600;
+            color: #4CAF50;
+        }
+        
+        .instructions {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .instructions h3 { margin-bottom: 10px; }
+        .instructions ol { margin-left: 20px; }
+        .instructions li { margin-bottom: 5px; }
+        
+        .info { color: #888; font-size: 14px; }
+        .success { color: #4CAF50; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✂️ Manual Stroke Extractor</h1>
+        <p class="subtitle">Extract the 10 missing professional strokes</p>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label>Page:</label>
+                <select id="pageSelect">
+                    <option value="">Select a page...</option>
+                    <option value="stroke_page-010.png">Page 10 - Missing: D</option>
+                    <option value="book_page-011.png">Page 11 - Missing: J</option>
+                    <option value="book_page-018.png">Page 18 - Missing: Z</option>
+                    <option value="book_page-021.png">Page 21 - Missing: L, W, Y, H</option>
+                </select>
+                <button onclick="loadPage()">Load Page</button>
+            </div>
+            
+            <div class="control-group">
+                <label>Stroke Name:</label>
+                <input type="text" id="strokeName" placeholder="e.g., D, J, Z, L, W, Y, H" />
+                <button onclick="clearSelection()">Clear</button>
+                <button onclick="downloadStroke()" id="downloadBtn" disabled>Download Stroke</button>
+            </div>
+            
+            <div class="control-group info">
+                <span id="status">Select a page to begin</span>
+            </div>
+        </div>
+        
+        <div class="workspace">
+            <div class="canvas-area">
+                <canvas id="canvas"></canvas>
+            </div>
+            
+            <div class="preview-area">
+                <h3 style="margin-bottom: 10px;">Preview</h3>
+                <div class="preview-box" id="previewBox">
+                    <p class="info">Draw a rectangle around the stroke on the canvas</p>
+                </div>
+                <div class="preview-label" id="previewLabel"></div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>📝 Instructions:</h3>
+            <ol>
+                <li>Select a page from the dropdown that has missing strokes</li>
+                <li>Click "Load Page" to display it on the canvas</li>
+                <li>Enter the stroke name (D, J, Z, L, W, Y, or H)</li>
+                <li>Click and drag on the canvas to select the stroke region</li>
+                <li>Preview appears on the right - verify it's correct</li>
+                <li>Click "Download Stroke" to save as [StrokeName]_professional.png</li>
+                <li>Repeat for all missing strokes</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const pageSelect = document.getElementById('pageSelect');
+        const strokeNameInput = document.getElementById('strokeName');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const statusSpan = document.getElementById('status');
+        const previewBox = document.getElementById('previewBox');
+        const previewLabel = document.getElementById('previewLabel');
+        
+        let currentImage = null;
+        let isDrawing = false;
+        let startX, startY, endX, endY;
+        let selection = null;
+        
+        function loadPage() {
+            const pageName = pageSelect.value;
+            if (!pageName) {
+                alert('Please select a page first');
+                return;
+            }
+            
+            const img = new Image();
+            img.onload = function() {
+                currentImage = img;
+                canvas.width = Math.min(img.width, 1000);
+                canvas.height = img.height * (canvas.width / img.width);
+                
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                
+                statusSpan.textContent = `Page loaded: ${pageName} (${img.width}x${img.height}px)`;
+                clearSelection();
+            };
+            img.onerror = function() {
+                alert('Failed to load page. Make sure the file exists in assets/stroke-images/professional/');
+            };
+            img.src = `assets/stroke-images/professional/${pageName}`;
+        }
+        
+        canvas.addEventListener('mousedown', (e) => {
+            if (!currentImage) return;
+            
+            const rect = canvas.getBoundingClientRect();
+            startX = (e.clientX - rect.left) * (canvas.width / rect.width);
+            startY = (e.clientY - rect.top) * (canvas.height / rect.height);
+            isDrawing = true;
+        });
+        
+        canvas.addEventListener('mousemove', (e) => {
+            if (!isDrawing) return;
+            
+            const rect = canvas.getBoundingClientRect();
+            endX = (e.clientX - rect.left) * (canvas.width / rect.width);
+            endY = (e.clientY - rect.top) * (canvas.height / rect.height);
+            
+            // Redraw image
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(currentImage, 0, 0, canvas.width, canvas.height);
+            
+            // Draw selection rectangle
+            ctx.strokeStyle = '#4CAF50';
+            ctx.lineWidth = 3;
+            ctx.strokeRect(startX, startY, endX - startX, endY - startY);
+        });
+        
+        canvas.addEventListener('mouseup', (e) => {
+            if (!isDrawing) return;
+            isDrawing = false;
+            
+            const rect = canvas.getBoundingClientRect();
+            endX = (e.clientX - rect.left) * (canvas.width / rect.width);
+            endY = (e.clientY - rect.top) * (canvas.height / rect.height);
+            
+            extractSelection();
+        });
+        
+        function extractSelection() {
+            if (!currentImage) return;
+            
+            const x = Math.min(startX, endX);
+            const y = Math.min(startY, endY);
+            const w = Math.abs(endX - startX);
+            const h = Math.abs(endY - startY);
+            
+            if (w < 10 || h < 10) {
+                statusSpan.textContent = 'Selection too small - try again';
+                return;
+            }
+            
+            // Scale coordinates back to original image size
+            const scaleX = currentImage.width / canvas.width;
+            const scaleY = currentImage.height / canvas.height;
+            
+            const srcX = Math.floor(x * scaleX);
+            const srcY = Math.floor(y * scaleY);
+            const srcW = Math.floor(w * scaleX);
+            const srcH = Math.floor(h * scaleY);
+            
+            // Add padding
+            const padding = 10;
+            const finalX = Math.max(0, srcX - padding);
+            const finalY = Math.max(0, srcY - padding);
+            const finalW = Math.min(currentImage.width - finalX, srcW + 2 * padding);
+            const finalH = Math.min(currentImage.height - finalY, srcH + 2 * padding);
+            
+            // Create extraction canvas
+            const extractCanvas = document.createElement('canvas');
+            extractCanvas.width = finalW;
+            extractCanvas.height = finalH;
+            const extractCtx = extractCanvas.getContext('2d');
+            
+            extractCtx.drawImage(
+                currentImage,
+                finalX, finalY, finalW, finalH,
+                0, 0, finalW, finalH
+            );
+            
+            // Store selection
+            selection = {
+                canvas: extractCanvas,
+                dataUrl: extractCanvas.toDataURL('image/png')
+            };
+            
+            // Show preview
+            previewBox.innerHTML = `<img src="${selection.dataUrl}" alt="Extracted stroke" />`;
+            previewLabel.textContent = `${finalW}x${finalH}px with ${padding}px padding`;
+            
+            downloadBtn.disabled = false;
+            statusSpan.textContent = `Selection ready! Enter stroke name and download`;
+        }
+        
+        function clearSelection() {
+            selection = null;
+            downloadBtn.disabled = true;
+            previewBox.innerHTML = '<p class="info">Draw a rectangle around the stroke on the canvas</p>';
+            previewLabel.textContent = '';
+            
+            if (currentImage) {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.drawImage(currentImage, 0, 0, canvas.width, canvas.height);
+            }
+        }
+        
+        function downloadStroke() {
+            const strokeName = strokeNameInput.value.trim().toUpperCase();
+            if (!strokeName) {
+                alert('Please enter a stroke name (e.g., D, J, Z, L, W, Y, H)');
+                return;
+            }
+            
+            if (!selection) {
+                alert('Please select a region first');
+                return;
+            }
+            
+            // Create download link
+            const link = document.createElement('a');
+            link.download = `${strokeName}_professional.png`;
+            link.href = selection.dataUrl;
+            link.click();
+            
+            statusSpan.innerHTML = `<span class="success">✅ Downloaded: ${strokeName}_professional.png</span>`;
+            
+            // Clear for next stroke
+            setTimeout(() => {
+                strokeNameInput.value = '';
+                clearSelection();
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

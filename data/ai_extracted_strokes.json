@@ -1,0 +1,153 @@
+{
+  "extraction_date": "2025-11-04",
+  "source_pdf": "Shorthand-Book.pdf",
+  "total_pages_processed": 8,
+  "pages_with_strokes": 8,
+  "extracted_pages": [
+    {
+      "page": 3,
+      "image_path": "assets/extracted-strokes/page_003.png",
+      "ocr_text": "Acknowledgements v\nStudy Plan vi\nIntroduction vill\n\nit 1 7\n\naight downstrokes\n\nkes P, B, T, D, CH, J;\nind-place dot vowels\n\nit 2 8\n\nrved strokes\n\nkes F, V, Th, TH, S, Z, Sh, ZH;\nnd-place dash vowels\n\nit 3 712\nizontal strokes K, G, M, N, NG;\nard strokes L, W, Y\n\nit 4 17\n-place vowels\n\nUnit 5 27\nird-place vowels\n\nit 6 26\nS circle; downward L\n\nt 7 34\nke R\n\nit 8 40\nthongs, triphones\ndiphones\n\n9 49\nConsonant H\n\nUnit 10 55\nST, STR, SES and SWAY\n\nea52 ase\n\n~zi=\n\nof 25 955\n\n9s\n\ngags\n\nUnit 11 63\nHalving\n",
+      "has_table": false,
+      "has_diagram": true,
+      "regions": {
+        "original": "/home/oem/Desktop/shorthand-simplified/assets/extracted-strokes/page_003.png",
+        "edges": "/home/oem/Desktop/shorthand-simplified/assets/extracted-strokes/page_003_edges.png",
+        "regions": []
+      }
+    },
+    {
+      "page": 7,
+      "image_path": "assets/extracted-strokes/page_007.png",
+      "ocr_text": "“a\n\n5 Theory check\n\ntest that you have understood the theory, each unit ends with a theory\nk. Write the shorthand for each word, or take it from dictation. You\ncheck your outlines with those given in Appendix V.\n\nwritten transcription\n\nYou should begin to type from your shorthand notes as soon as possible.\nto produce mailable copy of all your shorthand notes, as you would do\nin a real business situation. When transcribing memorandums and letters,\n\nember to display these correctly, as you would d",
+      "has_table": false,
+      "has_diagram": true,
+      "regions": {
+        "original": "/home/oem/Desktop/shorthand-simplified/assets/extracted-strokes/page_007.png",
+        "edges": "/home/oem/Desktop/shorthand-simplified/assets/extracted-strokes/page_007_edges.png",
+        "regions": []
+      }
+    },
+    {
+      "page": 9,
+      "image_path": "assets/extracted-strokes/page_009.png",
+      "ocr_text": "Unit 1\n\nStraight downstrokes\n\nIn Pitman Shorthand, the sounds heard in English words are divided into:\n\n24 Consonants 12 Vowels 4 Diphthongs\n\na shorthand sign is provided for each of these sounds.\ne first six consonants are represented by light or darker straight\nstrokes written downwards. Arrows indicate the direction in which strokes\nwritten; they are never written in any other direction.\n\ntd\n\n\" <P, Hi) Straight downstrokes\n| A 2\n\nneat and accurate outlines. Remember that your writing should a",
+      "has_table": true,
+      "has_diagram": true,
+      "regions": {
+        "original": "/home/oem/Desktop/shorthand-simplified/assets/extracted-strokes/page_009.png",
+        "edges": "/home/oem/Desktop/shorthand-simplified/assets/extracted-strokes/page_009_edges.png",
+        "regions": []
+      }
+    },
+    {
+      "page": 11,
+      "image_path": "assets/extracted-strokes/page_011.png",
+      "ocr_text": "@).N... Lf _ > “une 4 & - é = > a\n2 t os \\. os — igen Bobi Miami | a\n\nVowels are represented by dots and dashes written close to the\nsonant strokes. When a vowel comes before a consonant, it is placed\nore the stroke (left side) and when a vowel comes after a consonant, it is\nd after the stroke (right side). Always write the consonant stroke first\nthen place the vowel sign.\n\nThe first upward or downward stroke takes the position of the first vowel\nund in the word.\n\nVowels are written: Dots Dashes",
+      "has_table": true,
+      "has_diagram": true,
+      "regions": {
+        "original": "/home/oem/Desktop/shorthand-simplified/assets/extracted-strokes/page_011.png",
+        "edges": "/home/oem/Desktop/shorthand-simplified/assets/extracted-strokes/page_011_edges.png",
+        "regions": []
+      }
+    },
+    {
+      "page": 13,
+      "image_path": "assets/extracted-strokes/page_013.png",
+      "ocr_text": "it, oe do, ..L.... which, MS... 10, Ne... two/too,\n\nthe, ....93.. is{his, a object/ objected.\n\nS circle is also joined to short forms, eg _ objects.\n\nPhrasing\n\nTo help in rapid writing, shorthand words may often be joined. This is\nknown as phrasing. Outlines should only be phrased when they join easily\nand naturally, the meaning being clear, as shown in the examples in this\nbook. The first word in a phrase is written in its normal position:\n\n5 pe cent, 20 per cent per annum.\n\nNo fe: The sign for",
+      "has_table": false,
+      "has_diagram": true,
+      "regions": {
+        "original": "/home/oem/Desktop/shorthand-simplified/assets/extracted-strokes/page_013.png",
+        "edges": "/home/oem/Desktop/shorthand-simplified/assets/extracted-strokes/page_013_edges.png",
+        "regions": []
+      }
+    },
+    {
+      "page": 15,
+      "image_path": "assets/extracted-strokes/page_015.png",
+      "ocr_text": "Theory check Siam\n\na test of what you have learnt so far, write the following in shorthand:\n\n1. which is 6 pep\n\n2 pays the 7 page the\n3 bays 8 babes\n\n4 aid 9 do the\n5 baits 10 date the\n\nStraight downstrokes 7\n",
+      "has_table": false,
+      "has_diagram": true
+    },
+    {
+      "page": 17,
+      "image_path": "assets/extracted-strokes/page_017.png",
+      "ocr_text": "he stroke S is used when S is the only consonant in a word, as in -\n\nCurved strokes 9\n",
+      "has_table": false,
+      "has_diagram": true
+    },
+    {
+      "page": 19,
+      "image_path": "assets/extracted-strokes/page_019.png",
+      "ocr_text": "Theory check Sis\n\nWrite the following in shorthand:\n\nshape 6 depot\nessay 7 edge\n\nj 8 show\nthud 9 fed\nfade 10 votes\n\nOAPwon\n—\noo)\n=\n\nCurved strokes 11\n\n",
+      "has_table": false,
+      "has_diagram": true
+    }
+  ],
+  "ai_ready_data": [
+    {
+      "page": 3,
+      "image_for_ai": "assets/extracted-strokes/page_003.png",
+      "ocr_context": "Acknowledgements v\nStudy Plan vi\nIntroduction vill\n\nit 1 7\n\naight downstrokes\n\nkes P, B, T, D, CH, J;\nind-place dot vowels\n\nit 2 8\n\nrved strokes\n\nkes F, V, Th, TH, S, Z, Sh, ZH;\nnd-place dash vowels\n\nit 3 712\nizontal strokes K, G, M, N, NG;\nard strokes L, W, Y\n\nit 4 17\n-place vowels\n\nUnit 5 27\nird-place vowels\n\nit 6 26\nS circle; downward L\n\nt 7 34\nke R\n\nit 8 40\nthongs, triphones\ndiphones\n\n9 49\nConsonant H\n\nUnit 10 55\nST, STR, SES and SWAY\n\nea52 ase\n\n~zi=\n\nof 25 955\n\n9s\n\ngags\n\nUnit 11 63\nHalving\n",
+      "extraction_prompt": "\n        Analyze this Pitman Shorthand reference page and extract:\n        1. All stroke representations shown (as visual descriptions)\n        2. The letter/sound each stroke represents\n        3. The direction of the stroke (upward, downward, horizontal, left-to-right, etc.)\n        4. Example words using each stroke\n        5. Any special notes about the stroke usage\n        \n        Format as JSON with entries like:\n        {\n          \"letter\": \"m\",\n          \"stroke\": \"Horizontal left to right\",\n          \"visual_description\": \"Short horizontal line written left to right\",\n          \"examples\": [\"men\", \"him\", \"sum\"],\n          \"notes\": \"Light horizontal stroke\"\n        }\n        ",
+      "expected_output_format": "structured_json"
+    },
+    {
+      "page": 7,
+      "image_for_ai": "assets/extracted-strokes/page_007.png",
+      "ocr_context": "“a\n\n5 Theory check\n\ntest that you have understood the theory, each unit ends with a theory\nk. Write the shorthand for each word, or take it from dictation. You\ncheck your outlines with those given in Appendix V.\n\nwritten transcription\n\nYou should begin to type from your shorthand notes as soon as possible.\nto produce mailable copy of all your shorthand notes, as you would do\nin a real business situation. When transcribing memorandums and letters,\n\nember to display these correctly, as you would d",
+      "extraction_prompt": "\n        Analyze this Pitman Shorthand reference page and extract:\n        1. All stroke representations shown (as visual descriptions)\n        2. The letter/sound each stroke represents\n        3. The direction of the stroke (upward, downward, horizontal, left-to-right, etc.)\n        4. Example words using each stroke\n        5. Any special notes about the stroke usage\n        \n        Format as JSON with entries like:\n        {\n          \"letter\": \"m\",\n          \"stroke\": \"Horizontal left to right\",\n          \"visual_description\": \"Short horizontal line written left to right\",\n          \"examples\": [\"men\", \"him\", \"sum\"],\n          \"notes\": \"Light horizontal stroke\"\n        }\n        ",
+      "expected_output_format": "structured_json"
+    },
+    {
+      "page": 9,
+      "image_for_ai": "assets/extracted-strokes/page_009.png",
+      "ocr_context": "Unit 1\n\nStraight downstrokes\n\nIn Pitman Shorthand, the sounds heard in English words are divided into:\n\n24 Consonants 12 Vowels 4 Diphthongs\n\na shorthand sign is provided for each of these sounds.\ne first six consonants are represented by light or darker straight\nstrokes written downwards. Arrows indicate the direction in which strokes\nwritten; they are never written in any other direction.\n\ntd\n\n\" <P, Hi) Straight downstrokes\n| A 2\n\nneat and accurate outlines. Remember that your writing should a",
+      "extraction_prompt": "\n        Analyze this Pitman Shorthand reference page and extract:\n        1. All stroke representations shown (as visual descriptions)\n        2. The letter/sound each stroke represents\n        3. The direction of the stroke (upward, downward, horizontal, left-to-right, etc.)\n        4. Example words using each stroke\n        5. Any special notes about the stroke usage\n        \n        Format as JSON with entries like:\n        {\n          \"letter\": \"m\",\n          \"stroke\": \"Horizontal left to right\",\n          \"visual_description\": \"Short horizontal line written left to right\",\n          \"examples\": [\"men\", \"him\", \"sum\"],\n          \"notes\": \"Light horizontal stroke\"\n        }\n        ",
+      "expected_output_format": "structured_json"
+    },
+    {
+      "page": 11,
+      "image_for_ai": "assets/extracted-strokes/page_011.png",
+      "ocr_context": "@).N... Lf _ > “une 4 & - é = > a\n2 t os \\. os — igen Bobi Miami | a\n\nVowels are represented by dots and dashes written close to the\nsonant strokes. When a vowel comes before a consonant, it is placed\nore the stroke (left side) and when a vowel comes after a consonant, it is\nd after the stroke (right side). Always write the consonant stroke first\nthen place the vowel sign.\n\nThe first upward or downward stroke takes the position of the first vowel\nund in the word.\n\nVowels are written: Dots Dashes",
+      "extraction_prompt": "\n        Analyze this Pitman Shorthand reference page and extract:\n        1. All stroke representations shown (as visual descriptions)\n        2. The letter/sound each stroke represents\n        3. The direction of the stroke (upward, downward, horizontal, left-to-right, etc.)\n        4. Example words using each stroke\n        5. Any special notes about the stroke usage\n        \n        Format as JSON with entries like:\n        {\n          \"letter\": \"m\",\n          \"stroke\": \"Horizontal left to right\",\n          \"visual_description\": \"Short horizontal line written left to right\",\n          \"examples\": [\"men\", \"him\", \"sum\"],\n          \"notes\": \"Light horizontal stroke\"\n        }\n        ",
+      "expected_output_format": "structured_json"
+    },
+    {
+      "page": 13,
+      "image_for_ai": "assets/extracted-strokes/page_013.png",
+      "ocr_context": "it, oe do, ..L.... which, MS... 10, Ne... two/too,\n\nthe, ....93.. is{his, a object/ objected.\n\nS circle is also joined to short forms, eg _ objects.\n\nPhrasing\n\nTo help in rapid writing, shorthand words may often be joined. This is\nknown as phrasing. Outlines should only be phrased when they join easily\nand naturally, the meaning being clear, as shown in the examples in this\nbook. The first word in a phrase is written in its normal position:\n\n5 pe cent, 20 per cent per annum.\n\nNo fe: The sign for",
+      "extraction_prompt": "\n        Analyze this Pitman Shorthand reference page and extract:\n        1. All stroke representations shown (as visual descriptions)\n        2. The letter/sound each stroke represents\n        3. The direction of the stroke (upward, downward, horizontal, left-to-right, etc.)\n        4. Example words using each stroke\n        5. Any special notes about the stroke usage\n        \n        Format as JSON with entries like:\n        {\n          \"letter\": \"m\",\n          \"stroke\": \"Horizontal left to right\",\n          \"visual_description\": \"Short horizontal line written left to right\",\n          \"examples\": [\"men\", \"him\", \"sum\"],\n          \"notes\": \"Light horizontal stroke\"\n        }\n        ",
+      "expected_output_format": "structured_json"
+    },
+    {
+      "page": 15,
+      "image_for_ai": "assets/extracted-strokes/page_015.png",
+      "ocr_context": "Theory check Siam\n\na test of what you have learnt so far, write the following in shorthand:\n\n1. which is 6 pep\n\n2 pays the 7 page the\n3 bays 8 babes\n\n4 aid 9 do the\n5 baits 10 date the\n\nStraight downstrokes 7\n",
+      "extraction_prompt": "\n        Analyze this Pitman Shorthand reference page and extract:\n        1. All stroke representations shown (as visual descriptions)\n        2. The letter/sound each stroke represents\n        3. The direction of the stroke (upward, downward, horizontal, left-to-right, etc.)\n        4. Example words using each stroke\n        5. Any special notes about the stroke usage\n        \n        Format as JSON with entries like:\n        {\n          \"letter\": \"m\",\n          \"stroke\": \"Horizontal left to right\",\n          \"visual_description\": \"Short horizontal line written left to right\",\n          \"examples\": [\"men\", \"him\", \"sum\"],\n          \"notes\": \"Light horizontal stroke\"\n        }\n        ",
+      "expected_output_format": "structured_json"
+    },
+    {
+      "page": 17,
+      "image_for_ai": "assets/extracted-strokes/page_017.png",
+      "ocr_context": "he stroke S is used when S is the only consonant in a word, as in -\n\nCurved strokes 9\n",
+      "extraction_prompt": "\n        Analyze this Pitman Shorthand reference page and extract:\n        1. All stroke representations shown (as visual descriptions)\n        2. The letter/sound each stroke represents\n        3. The direction of the stroke (upward, downward, horizontal, left-to-right, etc.)\n        4. Example words using each stroke\n        5. Any special notes about the stroke usage\n        \n        Format as JSON with entries like:\n        {\n          \"letter\": \"m\",\n          \"stroke\": \"Horizontal left to right\",\n          \"visual_description\": \"Short horizontal line written left to right\",\n          \"examples\": [\"men\", \"him\", \"sum\"],\n          \"notes\": \"Light horizontal stroke\"\n        }\n        ",
+      "expected_output_format": "structured_json"
+    },
+    {
+      "page": 19,
+      "image_for_ai": "assets/extracted-strokes/page_019.png",
+      "ocr_context": "Theory check Sis\n\nWrite the following in shorthand:\n\nshape 6 depot\nessay 7 edge\n\nj 8 show\nthud 9 fed\nfade 10 votes\n\nOAPwon\n—\noo)\n=\n\nCurved strokes 11\n\n",
+      "extraction_prompt": "\n        Analyze this Pitman Shorthand reference page and extract:\n        1. All stroke representations shown (as visual descriptions)\n        2. The letter/sound each stroke represents\n        3. The direction of the stroke (upward, downward, horizontal, left-to-right, etc.)\n        4. Example words using each stroke\n        5. Any special notes about the stroke usage\n        \n        Format as JSON with entries like:\n        {\n          \"letter\": \"m\",\n          \"stroke\": \"Horizontal left to right\",\n          \"visual_description\": \"Short horizontal line written left to right\",\n          \"examples\": [\"men\", \"him\", \"sum\"],\n          \"notes\": \"Light horizontal stroke\"\n        }\n        ",
+      "expected_output_format": "structured_json"
+    }
+  ],
+  "next_steps": [
+    "Send ai_ready_data to AI vision API (GPT-4 Vision, Claude, etc.)",
+    "Extract stroke representations from AI response",
+    "Match with existing word lists in shortforms.ts",
+    "Generate TypeScript data file with image references"
+  ]
+}
