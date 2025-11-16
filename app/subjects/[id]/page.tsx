@@ -8,8 +8,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function SubjectPage({ params }: { params: { id: string } }) {
-  const subject = subjects.find((s) => s.id === params.id);
+export default async function SubjectPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const subject = subjects.find((s) => s.id === id);
 
   if (!subject) {
     notFound();

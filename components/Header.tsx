@@ -6,38 +6,35 @@ import { useSession, signIn, signOut } from "next-auth/react";
 export default function Header() {
   const { data: session } = useSession();
   return (
-    <header className="border-b border-gray-200 dark:border-gray-800">
+    <header className="bg-white/80 backdrop-blur-lg shadow-lg sticky top-0 z-50 border-b border-orange-200">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            LearnHub Academy
+          <Link href="/" className="text-3xl font-extrabold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent hover:scale-105 transition">
+            🛠️ LearnHub Academy
           </Link>
           
-          <div className="hidden md:flex items-center gap-8">
-            <Link href="/subjects" className="hover:text-primary transition-colors">
-              Subjects
+          <div className="hidden md:flex items-center gap-6">
+            <Link href="/#courses" className="text-gray-700 hover:text-orange-600 transition-colors font-semibold">
+              Courses
             </Link>
-            <Link href="/apps" className="hover:text-primary transition-colors">
+            <Link href="/apps" className="text-gray-700 hover:text-orange-600 transition-colors font-semibold">
               Apps
             </Link>
-            <Link href="/pricing" className="hover:text-primary transition-colors">
+            <Link href="/pricing" className="text-gray-700 hover:text-orange-600 transition-colors font-semibold">
               Pricing
             </Link>
-            <Link href="/resources" className="hover:text-primary transition-colors">
+            <Link href="/resources" className="text-gray-700 hover:text-orange-600 transition-colors font-semibold">
               Resources
-            </Link>
-            <Link href="/about" className="hover:text-primary transition-colors">
-              About
             </Link>
           </div>
 
           <div className="flex items-center gap-4">
             {session ? (
               <>
-                <span className="text-gray-700">Hi, {session.user?.name?.split(' ')[0]}</span>
+                <span className="text-gray-700 font-medium">Hi, {session.user?.name?.split(' ')[0]} 👋</span>
                 <button 
                   onClick={() => signOut()}
-                  className="px-4 py-2 text-primary hover:text-primary/80 transition-colors"
+                  className="px-6 py-2 text-orange-600 hover:text-orange-700 font-semibold transition"
                 >
                   Sign Out
                 </button>
@@ -46,13 +43,13 @@ export default function Header() {
               <>
                 <button 
                   onClick={() => signIn()}
-                  className="px-4 py-2 text-primary hover:text-primary/80 transition-colors"
+                  className="px-6 py-2 text-orange-600 hover:text-orange-700 font-semibold transition"
                 >
                   Log In
                 </button>
                 <button 
                   onClick={() => signIn()}
-                  className="px-6 py-2 bg-gradient-to-r from-sky-500 to-amber-500 text-white rounded-lg hover:from-sky-600 hover:to-amber-600 transition font-medium"
+                  className="px-6 py-3 bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-full font-bold hover:from-orange-700 hover:to-amber-700 transition-all hover:scale-105 shadow-lg"
                 >
                   Sign Up
                 </button>
