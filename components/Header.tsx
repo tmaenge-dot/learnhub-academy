@@ -1,6 +1,10 @@
+'use client'
+
 import Link from "next/link";
+import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function Header() {
+  const { data: session } = useSession();
   return (
     <header className="border-b border-gray-200 dark:border-gray-800">
       <nav className="container mx-auto px-4 py-4">
@@ -16,6 +20,9 @@ export default function Header() {
             <Link href="/apps" className="hover:text-primary transition-colors">
               Apps
             </Link>
+            <Link href="/pricing" className="hover:text-primary transition-colors">
+              Pricing
+            </Link>
             <Link href="/resources" className="hover:text-primary transition-colors">
               Resources
             </Link>
@@ -25,18 +32,32 @@ export default function Header() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link
-              href="/login"
-              className="px-4 py-2 text-primary hover:text-primary/80 transition-colors"
-            >
-              Login
-            </Link>
-            <Link
-              href="/signup"
-              className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
-            >
-              Sign Up
-            </Link>
+            {session ? (
+              <>
+                <span className="text-gray-700">Hi, {session.user?.name?.split(' ')[0]}</span>
+                <button 
+                  onClick={() => signOut()}
+                  className="px-4 py-2 text-primary hover:text-primary/80 transition-colors"
+                >
+                  Sign Out
+                </button>
+              </>
+            ) : (
+              <>
+                <button 
+                  onClick={() => signIn()}
+                  className="px-4 py-2 text-primary hover:text-primary/80 transition-colors"
+                >
+                  Log In
+                </button>
+                <button 
+                  onClick={() => signIn()}
+                  className="px-6 py-2 bg-gradient-to-r from-sky-500 to-amber-500 text-white rounded-lg hover:from-sky-600 hover:to-amber-600 transition font-medium"
+                >
+                  Sign Up
+                </button>
+              </>
+            )}
           </div>
         </div>
       </nav>

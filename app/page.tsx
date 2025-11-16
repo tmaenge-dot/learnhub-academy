@@ -34,26 +34,33 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-2">Explore Our Subjects</h2>
         <p className="text-gray-600 dark:text-gray-400 mb-8">Choose from our diverse range of courses and start learning today</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {subjects.map((subject) => (
-            <Link
+          {subjects.map((subject, index) => (
+            <motion.div
               key={subject.id}
-              href={`/subjects/${subject.id}`}
-              className="block p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-lg transition-shadow"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
             >
-              <div className="text-4xl mb-4">{subject.icon}</div>
-              <h3 className="text-2xl font-semibold mb-2">{subject.name}</h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
-                {subject.description}
-              </p>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-primary font-medium">
-                  {subject.lessonCount} lessons
-                </span>
+              <Link
+                href={`/subjects/${subject.id}`}
+                className="block p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-lg transition-shadow"
+              >
+                <div className="text-4xl mb-4">{subject.icon}</div>
+                <h3 className="text-2xl font-semibold mb-2">{subject.name}</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  {subject.description}
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-primary font-medium">
+                    {subject.lessonCount} lessons
+                  </span>
                 <span className="text-sm text-secondary font-medium">
                   {subject.resourceCount} resources
                 </span>
               </div>
             </Link>
+            </motion.div>
           ))}
         </div>
       </section>
