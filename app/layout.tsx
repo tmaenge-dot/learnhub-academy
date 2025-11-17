@@ -9,8 +9,8 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LearnHub Academy - Master Multiple Subjects Online",
-  description: "Comprehensive educational platform offering courses in shorthand, mathematics, science, languages, programming, and business. Learn at your own pace with expert-designed content.",
+  title: "Enge's Deliverables Academy - TVET Educational Apps",
+  description: "Professional vocational training apps and learning materials for TVET students. Access quality educational applications designed for technical and vocational education.",
 };
 
 export default function RootLayout({
