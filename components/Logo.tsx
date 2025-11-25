@@ -1,68 +1,55 @@
-export default function Logo({ className = "", size = 45 }: { className?: string; size?: number }) {
+export default function Logo({ className = "" }: { className?: string }) {
   return (
     <svg
-      width={size}
-      height={size}
       className={className}
-      viewBox="0 0 100 100"
+      viewBox="0 0 200 200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Background Circle with Gradient */}
+      {/* Graduation cap */}
+      <path
+        d="M100 40L20 80L100 120L180 80L100 40Z"
+        fill="url(#gradient1)"
+        stroke="currentColor"
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M180 80V120C180 130 150 145 100 145C50 145 20 130 20 120V80"
+        stroke="currentColor"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+      {/* Book */}
+      <rect
+        x="60"
+        y="100"
+        width="80"
+        height="60"
+        rx="4"
+        fill="url(#gradient2)"
+        stroke="currentColor"
+        strokeWidth="2"
+      />
+      <line x1="100" y1="100" x2="100" y2="160" stroke="currentColor" strokeWidth="2" />
+      <line x1="70" y1="120" x2="90" y2="120" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      <line x1="110" y1="120" x2="130" y2="120" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      <line x1="70" y1="135" x2="90" y2="135" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      <line x1="110" y1="135" x2="130" y2="135" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      
+      {/* Gradients */}
       <defs>
-        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#06b6d4" />
-          <stop offset="50%" stopColor="#3b82f6" />
-          <stop offset="100%" stopColor="#8b5cf6" />
-        </linearGradient>
-        <linearGradient id="capGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#fbbf24" />
+        <linearGradient id="gradient1" x1="20" y1="40" x2="180" y2="120">
+          <stop offset="0%" stopColor="#0ea5e9" />
           <stop offset="100%" stopColor="#f59e0b" />
         </linearGradient>
+        <linearGradient id="gradient2" x1="60" y1="100" x2="140" y2="160">
+          <stop offset="0%" stopColor="#f59e0b" />
+          <stop offset="100%" stopColor="#10b981" />
+        </linearGradient>
       </defs>
-      
-      {/* Main Circle Background */}
-      <circle cx="50" cy="50" r="48" fill="url(#logoGradient)" />
-      
-      {/* Graduation Cap (Academic Focus) */}
-      <path 
-        d="M 50 22 L 78 32 L 78 42 L 50 52 L 22 42 L 22 32 Z" 
-        fill="url(#capGradient)" 
-        stroke="#f59e0b" 
-        strokeWidth="1.5"
-      />
-      
-      {/* Cap Tassel */}
-      <rect x="48" y="52" width="4" height="10" fill="#f59e0b" rx="1" />
-      <circle cx="50" cy="64" r="2.5" fill="#fbbf24" />
-      
-      {/* Letter "E" in Modern Style */}
-      <text 
-        x="32" 
-        y="52" 
-        fontSize="32" 
-        fontWeight="bold" 
-        fill="white" 
-        fontFamily="Arial, sans-serif"
-        style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}
-      >
-        E
-      </text>
-      
-      {/* Gear Icon (TVET/Technical Focus) - Bottom Right */}
-      <circle cx="72" cy="72" r="9" fill="#10b981" stroke="#059669" strokeWidth="2" />
-      <circle cx="72" cy="72" r="4.5" fill="white" />
-      {/* Gear teeth */}
-      <rect x="70.5" y="63" width="3" height="4" fill="#059669" rx="0.5" />
-      <rect x="70.5" y="77" width="3" height="4" fill="#059669" rx="0.5" />
-      <rect x="63" y="70.5" width="4" height="3" fill="#059669" rx="0.5" />
-      <rect x="77" y="70.5" width="4" height="3" fill="#059669" rx="0.5" />
-      
-      {/* Book/Deliverables Icon - Bottom Left */}
-      <rect x="26" y="70" width="18" height="12" rx="1" fill="#ec4899" stroke="#db2777" strokeWidth="1.5" />
-      <line x1="29" y1="73" x2="41" y2="73" stroke="white" strokeWidth="1" strokeLinecap="round" />
-      <line x1="29" y1="76" x2="41" y2="76" stroke="white" strokeWidth="1" strokeLinecap="round" />
-      <line x1="29" y1="79" x2="38" y2="79" stroke="white" strokeWidth="1" strokeLinecap="round" />
     </svg>
   );
 }
