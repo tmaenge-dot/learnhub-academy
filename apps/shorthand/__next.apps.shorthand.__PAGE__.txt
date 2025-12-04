@@ -3,7 +3,7 @@
 3:I[60441,["/learnhub-academy/_next/static/chunks/796e69ae18b2784c.js","/learnhub-academy/_next/static/chunks/86570853894ee1d7.js","/learnhub-academy/_next/static/chunks/251f4eab01e5bd85.js","/learnhub-academy/_next/static/chunks/4ac15a6332f74a69.js"],"default"]
 6:I[97367,["/learnhub-academy/_next/static/chunks/ff1a16fafef87110.js","/learnhub-academy/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"gDZqWx0hloZtBRxxw6jF1","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/learnhub-academy/_next/static/chunks/251f4eab01e5bd85.js","async":true}],["$","script","script-1",{"src":"/learnhub-academy/_next/static/chunks/4ac15a6332f74a69.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"7hwHOUSmL7S_O_ZNtgbCn","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/learnhub-academy/_next/static/chunks/251f4eab01e5bd85.js","async":true}],["$","script","script-1",{"src":"/learnhub-academy/_next/static/chunks/4ac15a6332f74a69.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:{}
 8:null
