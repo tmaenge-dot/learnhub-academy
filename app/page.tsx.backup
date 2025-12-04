@@ -37,7 +37,7 @@ export default function Home() {
             Interactive learning applications for technical and vocational education
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Shorthand App */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="bg-slate-800 p-6 text-white">
@@ -91,33 +91,6 @@ export default function Home() {
                 </ul>
                 <a
                   href="https://tmaenge-dot.github.io/information-processing-app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center px-6 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-colors"
-                >
-                  Open App
-                </a>
-              </div>
-            </div>
-
-            {/* Shorthand Simplified App */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-slate-800 p-6 text-white">
-                <div className="text-6xl mb-3">📝</div>
-                <h3 className="text-2xl font-bold">Shorthand Simplified</h3>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-700 mb-4">
-                  Master modern shorthand with AI-powered learning. Freemium model with free lessons and premium features.
-                </p>
-                <ul className="text-gray-600 mb-6 space-y-2">
-                  <li>✓ Free basic lessons</li>
-                  <li>✓ Practice canvas</li>
-                  <li>✓ AI recognition (Premium)</li>
-                  <li>✓ 100+ lessons (Premium)</li>
-                </ul>
-                <a
-                  href="https://tmaenge-dot.github.io/shorthand-simplified-app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-center px-6 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-colors"

@@ -10,21 +10,21 @@ const apps = [
     downloadUrl: '/apps/shorthand/download',
   },
   {
+    id: 'shorthand-simplified',
+    name: 'Shorthand Simplified',
+    description: 'A modern shorthand app for both desktop and Android. Download the AAB for Android or use on desktop.',
+    icon: '📝',
+    url: '/apps/shorthand-simplified',
+    downloadUrl: '/downloads/shorthand-simplified.aab',
+  },
+  {
     id: 'information-processing',
     name: 'Information Processing',
     description: 'Learn web development and digital skills',
     icon: '💻',
     url: 'https://tmaenge-dot.github.io/information-processing-app/',
     downloadUrl: null,
-  },
-  {
-    id: 'shorthand-simplified',
-    name: 'Shorthand Simplified',
-    description: 'Master modern shorthand with AI-powered learning',
-    icon: '📝',
-    url: 'https://tmaenge-dot.github.io/shorthand-simplified-app/',
-    downloadUrl: null,
-  },
+  }
 ];
 
 export default function AppsPage() {
@@ -36,7 +36,7 @@ export default function AppsPage() {
             Educational Apps
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {apps.map((app) => (
               <div
                 key={app.id}
@@ -49,18 +49,27 @@ export default function AppsPage() {
                 </div>
 
                 <div className="p-6 space-y-3">
-                  <a
-                    href={app.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full text-center px-6 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all shadow-lg cursor-pointer"
-                  >
-                    🚀 Launch App
-                  </a>
+                  {app.id === 'shorthand-simplified' ? (
+                    <Link
+                      href={app.url}
+                      className="block w-full text-center px-6 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all shadow-lg"
+                    >
+                      🚀 Launch App
+                    </Link>
+                  ) : (
+                    <a
+                      href={app.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full text-center px-6 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all shadow-lg"
+                    >
+                      🚀 Launch App
+                    </a>
+                  )}
                   {app.downloadUrl && (
                     <Link
                       href={app.downloadUrl}
-                      className="block w-full text-center px-6 py-3 border-2 border-cyan-500 text-cyan-600 font-semibold rounded-lg hover:bg-cyan-50 transition-colors cursor-pointer"
+                      className="block w-full text-center px-6 py-3 border-2 border-cyan-500 text-cyan-600 font-semibold rounded-lg hover:bg-cyan-50 transition-colors"
                     >
                       📥 Download APK
                     </Link>
