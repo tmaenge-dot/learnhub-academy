@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
-2:I[47257,["/learnhub-academy/_next/static/chunks/7b9de35f65e3aeee.js","/learnhub-academy/_next/static/chunks/247eb132b7f7b574.js"],"ClientPageRoot"]
-3:I[36768,["/learnhub-academy/_next/static/chunks/7b9de35f65e3aeee.js","/learnhub-academy/_next/static/chunks/247eb132b7f7b574.js","/learnhub-academy/_next/static/chunks/fdb28bc93e5da2c2.js","/learnhub-academy/_next/static/chunks/4ac15a6332f74a69.js"],"default"]
-6:I[97367,["/learnhub-academy/_next/static/chunks/7b9de35f65e3aeee.js","/learnhub-academy/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+2:I[47257,["/learnhub-academy/_next/static/chunks/796e69ae18b2784c.js","/learnhub-academy/_next/static/chunks/247eb132b7f7b574.js","/learnhub-academy/_next/static/chunks/86570853894ee1d7.js"],"ClientPageRoot"]
+3:I[36768,["/learnhub-academy/_next/static/chunks/796e69ae18b2784c.js","/learnhub-academy/_next/static/chunks/247eb132b7f7b574.js","/learnhub-academy/_next/static/chunks/86570853894ee1d7.js","/learnhub-academy/_next/static/chunks/fdb28bc93e5da2c2.js","/learnhub-academy/_next/static/chunks/4ac15a6332f74a69.js"],"default"]
+6:I[97367,["/learnhub-academy/_next/static/chunks/796e69ae18b2784c.js","/learnhub-academy/_next/static/chunks/247eb132b7f7b574.js","/learnhub-academy/_next/static/chunks/86570853894ee1d7.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"KayNbFSFJdqHXKJjfmnIy","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/learnhub-academy/_next/static/chunks/fdb28bc93e5da2c2.js","async":true}],["$","script","script-1",{"src":"/learnhub-academy/_next/static/chunks/4ac15a6332f74a69.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"MEo6pTU3YyyzANFts-g3t","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/learnhub-academy/_next/static/chunks/fdb28bc93e5da2c2.js","async":true}],["$","script","script-1",{"src":"/learnhub-academy/_next/static/chunks/4ac15a6332f74a69.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:{}
 8:null
