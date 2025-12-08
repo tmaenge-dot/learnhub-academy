@@ -1,9 +1,13 @@
 import createMDX from '@next/mdx';
 import type { NextConfig } from "next";
 
+// Use basePath only in production (GitHub Pages)
+// In development, use no basePath for easier local testing
+const isProduction = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/learnhub-academy',
+  basePath: isProduction ? '/learnhub-academy' : '',
   images: {
     unoptimized: true,
   },

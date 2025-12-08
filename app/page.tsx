@@ -1,333 +1,191 @@
+'use client'
+
 import Link from "next/link";
-import AdSense from "@/components/AdSense";
+import { motion } from "framer-motion";
 
 export default function Home() {
+  const apps = [
+    {
+      id: "shorthand",
+      name: "Shorthand (Pitman)",
+      icon: "✍️",
+      description: "Master rapid writing with comprehensive Pitman shorthand lessons. Perfect for secretarial and office administration students.",
+      rating: "4.8",
+      downloads: "10K+",
+      price: "Free",
+      features: ["45+ Interactive lessons", "Practice exercises", "Progress tracking", "Offline access"],
+      gradient: "from-orange-500 to-amber-600",
+      link: "/apps/shorthand"
+    },
+    {
+      id: "information-processing",
+      name: "Information Processing",
+      icon: "�",
+      description: "Learn web development and digital information management skills. Essential for IT and computer science students.",
+      rating: "4.7",
+      downloads: "8K+",
+      price: "Free",
+      features: ["Web development basics", "Hands-on projects", "Real-world applications", "Industry-relevant skills"],
+      gradient: "from-blue-500 to-indigo-600",
+      link: "/apps/information-processing"
+    },
+    {
+      id: "shorthand-simplified",
+      name: "Shorthand Simplified",
+      icon: "📝",
+      description: "Master modern shorthand with AI-powered learning. Freemium model with free lessons and premium features.",
+      rating: "4.9",
+      downloads: "12K+",
+      price: "$9.99",
+      features: ["Free basic lessons", "Practice canvas", "AI recognition (Premium)", "100+ lessons (Premium)"],
+      gradient: "from-cyan-500 to-blue-600",
+      link: "/apps/shorthand-simplified"
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white py-20 px-4">
-        <div className="container mx-auto max-w-6xl text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Empowering TVET Students and Educators
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Practical Skills for a Brighter Future - Access innovative educational apps designed for vocational training
-          </p>
-          <Link
-            href="/apps"
-            className="inline-block px-10 py-4 bg-white text-cyan-600 font-bold text-lg rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
-          >
-            Explore Our Apps
-          </Link>
+      <motion.section 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 text-white py-24 px-4"
+      >
+        {/* Animated background elements */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-300 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
-      </section>
-
-      {/* App Showcase */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-6xl">
-          {/* Advertisement - Top of Apps Section */}
-          <div className="mb-8">
-            <AdSense adSlot="1234567890" adFormat="horizontal" />
-          </div>
-
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">
-            Featured TVET Apps
-          </h2>
-          <p className="text-center text-gray-600 mb-12 text-lg">
-            Interactive learning applications for technical and vocational education
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Shorthand App */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-slate-800 p-6 text-white">
-                <div className="text-6xl mb-3">✍️</div>
-                <h3 className="text-2xl font-bold">Shorthand (Pitman)</h3>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-700 mb-4">
-                  Master rapid writing with comprehensive Pitman shorthand lessons. Perfect for secretarial and office administration students.
-                </p>
-                <ul className="text-gray-600 mb-6 space-y-2">
-                  <li>✓ 45+ Interactive lessons</li>
-                  <li>✓ Practice exercises</li>
-                  <li>✓ Progress tracking</li>
-                  <li>✓ Offline access</li>
-                </ul>
-                <div className="flex gap-3">
-                  <a
-                    href="https://tmaenge-dot.github.io/shorthand-tutor-app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center px-6 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-colors"
-                  >
-                    Open App
-                  </a>
-                  <Link
-                    href="/apps/shorthand/download"
-                    className="flex-1 text-center px-6 py-3 border-2 border-cyan-500 text-cyan-600 font-semibold rounded-lg hover:bg-cyan-50 transition-colors"
-                  >
-                    Download
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Information Processing App */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-slate-800 p-6 text-white">
-                <div className="text-6xl mb-3">💻</div>
-                <h3 className="text-2xl font-bold">Information Processing</h3>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-700 mb-4">
-                  Learn web development and digital information management skills. Essential for IT and computer science students.
-                </p>
-                <ul className="text-gray-600 mb-6 space-y-2">
-                  <li>✓ Web development basics</li>
-                  <li>✓ Hands-on projects</li>
-                  <li>✓ Real-world applications</li>
-                  <li>✓ Industry-relevant skills</li>
-                </ul>
-                <a
-                  href="https://tmaenge-dot.github.io/information-processing-app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center px-6 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-colors"
-                >
-                  Open App
-                </a>
-              </div>
-            </div>
-
-            {/* Shorthand Simplified App */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-slate-800 p-6 text-white">
-                <div className="text-6xl mb-3">📝</div>
-                <h3 className="text-2xl font-bold">Shorthand Simplified</h3>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-700 mb-4">
-                  Master modern shorthand with AI-powered learning. Freemium model with free lessons and premium features.
-                </p>
-                <ul className="text-gray-600 mb-6 space-y-2">
-                  <li>✓ Free basic lessons</li>
-                  <li>✓ Practice canvas</li>
-                  <li>✓ AI recognition (Premium)</li>
-                  <li>✓ 100+ lessons (Premium)</li>
-                </ul>
-                <a
-                  href="https://tmaenge-dot.github.io/shorthand-simplified-app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center px-6 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-colors"
-                >
-                  Open App
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
+        
+        <div className="relative container mx-auto text-center">
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="text-6xl md:text-7xl font-extrabold mb-6 drop-shadow-lg">
+              🎓 Enge's Deliverables Academy
+            </h1>
+            <p className="text-xl md:text-2xl mb-4 font-medium max-w-3xl mx-auto">
+              Free TVET Educational Apps for Students
+            </p>
+            <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+              Professional mobile learning apps - Download, learn, and excel! 🚀
+            </p>
+          </motion.div>
+          
+          <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            className="flex flex-col sm:flex-row justify-center gap-4 mt-12"
+          >
+            <Link
+              href="#apps"
+              className="px-10 py-4 bg-white text-purple-600 rounded-full font-bold text-lg shadow-2xl hover:shadow-white/50 transition-all duration-300 hover:scale-110 hover:bg-yellow-300"
+            >
+              � Explore Apps
+            </Link>
             <Link
               href="/apps"
-              className="inline-block px-8 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-colors"
+              className="px-10 py-4 bg-transparent border-3 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-purple-600 transition-all duration-300 hover:scale-110"
             >
-              View All Apps
+              � All Downloads
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Features and Benefits */}
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          {/* Advertisement - Before Features */}
-          <div className="mb-12">
-            <AdSense adSlot="2345678901" adFormat="rectangle" />
-          </div>
-
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
-            Why Choose Our Apps?
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6">
-              <div className="text-5xl mb-4">🎯</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Develop Practical Skills
-              </h3>
-              <p className="text-gray-600">
-                Hands-on learning experiences that prepare you for real-world job requirements
-              </p>
-            </div>
-
-            <div className="text-center p-6">
-              <div className="text-5xl mb-4">🧠</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Improve Knowledge Retention
-              </h3>
-              <p className="text-gray-600">
-                Interactive exercises and practice sessions that help you remember what you learn
-              </p>
-            </div>
-
-            <div className="text-center p-6">
-              <div className="text-5xl mb-4">💼</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Enhance Employability
-              </h3>
-              <p className="text-gray-600">
-                Build in-demand skills that make you more competitive in the job market
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
-            What Our Users Say
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow">
-              <div className="text-yellow-500 text-2xl mb-3">★★★★★</div>
-              <p className="text-gray-700 mb-4 italic">
-                "The Shorthand app has been incredibly helpful for my office administration course. I can practice anywhere!"
-              </p>
-              <p className="font-semibold text-gray-900">- Sarah M.</p>
-              <p className="text-sm text-gray-600">TVET Student</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow">
-              <div className="text-yellow-500 text-2xl mb-3">★★★★★</div>
-              <p className="text-gray-700 mb-4 italic">
-                "These apps make teaching so much easier. My students are more engaged and their skills have improved significantly."
-              </p>
-              <p className="font-semibold text-gray-900">- Mr. Johnson</p>
-              <p className="text-sm text-gray-600">TVET Educator</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow">
-              <div className="text-yellow-500 text-2xl mb-3">★★★★★</div>
-              <p className="text-gray-700 mb-4 italic">
-                "Excellent tools for vocational training. Our graduates are better prepared for the workplace thanks to these apps."
-              </p>
-              <p className="font-semibold text-gray-900">- Dr. Kamau</p>
-              <p className="text-sm text-gray-600">College Principal</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* News and Updates */}
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
-            Latest Updates
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div className="text-sm text-cyan-600 font-semibold mb-2">November 2025</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                New Features Added to Shorthand App
-              </h3>
-              <p className="text-gray-600 mb-4">
-                We've added new practice exercises and improved the user interface for better learning experience.
-              </p>
-              <a href="#" className="text-cyan-600 font-semibold hover:underline">
-                Read more →
-              </a>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div className="text-sm text-cyan-600 font-semibold mb-2">October 2025</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                TVET Digital Skills Initiative
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Partnering with local colleges to bring digital learning tools to more TVET students across the region.
-              </p>
-              <a href="#" className="text-cyan-600 font-semibold hover:underline">
-                Read more →
-              </a>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div className="text-sm text-cyan-600 font-semibold mb-2">September 2025</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Mobile Apps Now Available
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Download our apps for offline access and learn on the go, anytime, anywhere.
-              </p>
-              <a href="#" className="text-cyan-600 font-semibold hover:underline">
-                Read more →
-              </a>
-            </div>
-          </div>
-
-          {/* Advertisement - After News Section */}
-          <div className="mt-12">
-            <AdSense adSlot="3456789012" adFormat="horizontal" />
-          </div>
-        </div>
-      </section>
-
-      {/* Call-to-Action */}
-      <section className="py-16 px-4 bg-cyan-500 text-white">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to Start Learning?
-          </h2>
-          <p className="text-xl mb-8">
-            Join thousands of TVET students and educators using our apps
-          </p>
-          <Link
-            href="/apps"
-            className="inline-block px-10 py-4 bg-white text-cyan-600 font-bold text-lg rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
+          </motion.div>
+          
+          {/* Social Share Buttons */}
+          <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+            className="mt-16"
           >
-            Get Started Now
-          </Link>
+            <p className="text-sm mb-4 opacity-90">🔥 Share with Friends:</p>
+            <div className="flex justify-center gap-3 flex-wrap">
+              <button className="px-6 py-2 bg-green-500 rounded-full font-semibold hover:bg-green-600 transition shadow-lg">
+                📱 WhatsApp
+              </button>
+              <button className="px-6 py-2 bg-blue-600 rounded-full font-semibold hover:bg-blue-700 transition shadow-lg">
+                📘 Facebook
+              </button>
+              <button className="px-6 py-2 bg-sky-400 rounded-full font-semibold hover:bg-sky-500 transition shadow-lg">
+                🐦 Twitter
+              </button>
+              <button className="px-6 py-2 bg-purple-500 rounded-full font-semibold hover:bg-purple-600 transition shadow-lg">
+                🔗 Copy Link
+              </button>
+            </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* Contact Information */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
-            Get in Touch
+      {/* Apps Section */}
+      <section id="apps" className="container mx-auto px-4 py-20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-5xl font-bold mb-4 text-gradient">
+            📱 Our Mobile Apps
           </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Professional educational apps designed for TVET students and professionals 🌟
+          </p>
+        </motion.div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {apps.map((app, index) => (
+            <motion.div
+              key={app.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ y: -10, transition: { duration: 0.2 } }}
+            >
+              <Link
+                href={app.link}
+                className="block h-full bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-purple-300"
+              >
+                <div className="text-6xl mb-6 text-center">{app.icon}</div>
+                <h3 className="text-2xl font-bold mb-3 text-gray-800">{app.name}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  {app.description}
+                </p>
+                
+                <div className="flex items-center justify-between mb-4">
+                  <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">
+                    ⭐ {app.rating}
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
+                    📥 {app.downloads}
+                  </span>
+                </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-6">
-              <div className="text-4xl mb-3">📧</div>
-              <h3 className="font-bold text-gray-900 mb-2">Email</h3>
-              <a href="mailto:info@engesdeliverables.academy" className="text-cyan-600 hover:underline">
-                info@engesdeliverables.academy
-              </a>
-            </div>
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-2">
+                    {app.features.map((feature, idx) => (
+                      <span key={idx} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
+                </div>
 
-            <div className="p-6">
-              <div className="text-4xl mb-3">📱</div>
-              <h3 className="font-bold text-gray-900 mb-2">Phone</h3>
-              <a href="tel:+26774568896" className="text-cyan-600 hover:underline">
-                +267 745 68896
-              </a>
-            </div>
-
-            <div className="p-6">
-              <div className="text-4xl mb-3">📍</div>
-              <h3 className="font-bold text-gray-900 mb-2">Location</h3>
-              <p className="text-gray-600">
-                Palapye, Botswana
-              </p>
-            </div>
-          </div>
+                <div className="flex items-center justify-between pt-4 border-t border-gray-200">
+                  <span className="text-lg font-bold text-purple-600">
+                    {app.price}
+                  </span>
+                  <span className={`inline-block px-4 py-2 bg-gradient-to-r ${app.gradient} text-white rounded-full text-sm font-semibold`}>
+                    Learn More →
+                  </span>
+                </div>
+              </Link>
+            </motion.div>
+          ))}
         </div>
       </section>
     </div>
